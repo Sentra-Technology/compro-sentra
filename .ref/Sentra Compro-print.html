@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8"/>
+<title>Sentra Technology — Company Profile (Print)</title>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="styles.css"/>
+<style>
+  /* Print-tuned overrides */
+  @page { size: A4 portrait; margin: 0; }
+  html, body { background: #0E1726 !important; }
+  body.dark .stage { background: #0E1726 !important; }
+  .stage { padding: 0 !important; gap: 0 !important; display: block !important; }
+  .page {
+    width: 210mm !important;
+    height: 297mm !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    margin: 0 auto !important;
+    page-break-after: always;
+    break-after: page;
+    overflow: hidden !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+  .page:last-child { page-break-after: auto; break-after: auto; }
+  .rail, .topbar, #tweaks-root, .twk-panel, [data-tweaks-root] { display: none !important; }
+  * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
+  @media screen {
+    body { background:#1a2238; }
+    .page { box-shadow: 0 30px 80px -20px rgba(0,0,0,.55), 0 8px 24px rgba(0,0,0,.25); margin: 24px auto; }
+    .stage { padding: 24px 0; display:flex; flex-direction:column; align-items:center; gap:24px; background:#14213d !important; }
+  }
+  @media print {
+    .page { transform-origin: top left; }
+  }
+</style>
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="root"></div>
+
+<script type="text/babel" src="tweaks-panel.jsx"></script>
+<script type="text/babel" src="components/primitives.jsx"></script>
+<script type="text/babel" src="components/pages-intro.jsx"></script>
+<script type="text/babel" src="components/pages-products-1.jsx"></script>
+<script type="text/babel" src="components/pages-products-2.jsx"></script>
+<script type="text/babel" src="components/pages-finale.jsx"></script>
+
+<script type="text/babel">
+const TWEAK_DEFAULTS = {
+  primary: "#2C5BB8",
+  navy: "#0A1B3D",
+  accent: "#3B82F6",
+  showCircuit: true,
+  density: "standard",
+  dark: true  // dark mode for print
+};
+
+function PageWrap({ pageNo, label, children }) {
+  return (
+    <div className="page" id={`page-${pageNo}`} data-screen-label={`${String(pageNo).padStart(2,"0")} ${label}`}>
+      {children}
+    </div>
+  );
+}
+
+const PAGES = [
+  { n:1,  label:"Cover",       comp:PageCover     },
+  { n:2,  label:"About",       comp:PageAbout     },
+  { n:3,  label:"CEO",         comp:PageCEO       },
+  { n:4,  label:"Services",    comp:PageServices  },
+  { n:5,  label:"Smartlock",   comp:PageSmartlock },
+  { n:6,  label:"Safety AI",   comp:PageSafety    },
+  { n:7,  label:"Attendance",  comp:PageAttendance},
+  { n:8,  label:"HRIS",        comp:PageHRIS      },
+  { n:9,  label:"FMS",         comp:PageFMS       },
+  { n:10, label:"sentrAI",     comp:PageSentrAI   },
+  { n:11, label:"Custom Web",  comp:PageWebsite   },
+  { n:12, label:"Integration", comp:PageIntegration},
+  { n:13, label:"Why Sentra",  comp:PageWhy       },
+  { n:14, label:"Projects",    comp:PageProjects  },
+  { n:15, label:"Browse",      comp:PageBrowse    },
+  { n:16, label:"Contact",     comp:PageContact   },
+];
+
+function App(){
+  React.useEffect(()=>{
+    const r = document.documentElement;
+    r.style.setProperty("--primary", TWEAK_DEFAULTS.primary);
+    r.style.setProperty("--navy", TWEAK_DEFAULTS.navy);
+    r.style.setProperty("--accent", TWEAK_DEFAULTS.accent);
+    document.body.classList.toggle("dark", !!TWEAK_DEFAULTS.dark);
+  }, []);
+
+  return (
+    <div className="stage">
+      {PAGES.map(({n,label,comp:C})=>(
+        <PageWrap key={n} pageNo={n} label={label}>
+          <C/>
+        </PageWrap>
+      ))}
+    </div>
+  );
+}
+
+ReactDOM.createRoot(document.getElementById("root")).render(<App/>);
+
+// Auto-print when ready
+(async () => {
+  try { if (document.fonts && document.fonts.ready) { await document.fonts.ready; } } catch(e){}
+  // Wait for React to mount all 16 pages
+  await new Promise(resolve => {
+    const start = Date.now();
+    const tick = () => {
+      const n = document.querySelectorAll('.page').length;
+      if (n >= 16 || Date.now() - start > 8000) resolve();
+      else setTimeout(tick, 100);
+    };
+    tick();
+  });
+  await new Promise(r => setTimeout(r, 600));
+  window.print();
+})();
+</script>
+</body>
+</html>

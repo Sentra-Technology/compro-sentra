@@ -1,0 +1,233 @@
+/* ---------- Sentra Technology Company Profile ---------- */
+:root{
+  --navy:#0A1B3D;
+  --navy-2:#13284F;
+  --primary:#2C5BB8;
+  --primary-2:#1E4796;
+  --accent:#3B82F6;
+  --paper:#F7F9FC;
+  --paper-2:#EDF2FA;
+  --ink:#0F172A;
+  --ink-2:#334155;
+  --muted:#64748B;
+  --line:#D7DEEA;
+  --line-2:#E5EBF4;
+  --hex:#1E40AF;
+  --ok:#10B981;
+  --warm:#F59E0B;
+  --rose:#F43F5E;
+  --page-w:744px;
+  --page-h:1052px;
+  --pad:56px;
+}
+
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:#1a2238;color:var(--ink);font-family:'Inter',system-ui,sans-serif;font-feature-settings:"ss01","cv11";-webkit-font-smoothing:antialiased}
+
+/* Stage holds all pages */
+.stage{
+  min-height:100vh;
+  padding:48px 24px 120px;
+  display:flex;flex-direction:column;align-items:center;gap:36px;
+  background:
+    radial-gradient(1200px 600px at 20% 0%, rgba(59,130,246,.10), transparent 60%),
+    radial-gradient(900px 500px at 80% 100%, rgba(44,91,184,.10), transparent 60%),
+    #14213d;
+}
+
+.page{
+  width:var(--page-w);
+  height:var(--page-h);
+  background:#ffffff;
+  position:relative;
+  overflow:hidden;
+  box-shadow:0 30px 80px -20px rgba(0,0,0,.55), 0 8px 24px rgba(0,0,0,.25);
+  border-radius:2px;
+  scroll-margin-top:60px;
+}
+
+/* circuit ornament */
+.circuit{position:absolute;inset:0;pointer-events:none;opacity:.55;color:#C8D2E6}
+.dotgrid{position:absolute;width:120px;height:60px;
+  background-image:radial-gradient(circle, #B6C2DB 1.2px, transparent 1.2px);
+  background-size:10px 10px;opacity:.7}
+
+/* Type */
+.h-display{font-family:'Space Grotesk',sans-serif;font-weight:700;letter-spacing:-0.02em;line-height:1.02;color:var(--navy)}
+.h-section{font-family:'Space Grotesk',sans-serif;font-weight:700;letter-spacing:-0.01em;color:var(--navy)}
+.h-eyebrow{font-family:'JetBrains Mono','Fira Code',monospace;font-weight:500;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--primary)}
+.body{font-family:'Inter',sans-serif;font-size:13px;line-height:1.6;color:var(--ink-2)}
+.kicker{font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+
+/* Section chip — replaces the rounded-blue tab on every product page */
+.section-chip{display:inline-flex;align-items:center;gap:10px;padding:10px 18px 10px 14px;background:var(--navy);color:#fff;font-family:'Space Grotesk';font-weight:600;font-size:14px;letter-spacing:.01em;border-radius:0 24px 24px 0;margin-left:-32px;position:relative}
+.section-chip::before{content:"";width:6px;height:6px;background:var(--accent);border-radius:50%;box-shadow:0 0 0 3px rgba(59,130,246,.25)}
+
+/* Page number footer */
+.pagefoot{position:absolute;left:var(--pad);right:var(--pad);bottom:24px;display:flex;justify-content:space-between;align-items:center;font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.14em;color:var(--muted);text-transform:uppercase}
+.pagefoot .rule{flex:1;height:1px;background:var(--line);margin:0 14px}
+
+/* Logo lockup */
+.logo-row{display:flex;align-items:center;gap:10px}
+.logo-row .name{font-family:'Space Grotesk';font-weight:600;color:var(--navy);line-height:1.05;font-size:15px}
+.logo-row .name small{display:block;font-weight:400;font-size:13px;color:var(--ink-2)}
+
+/* Buttons / pills */
+.pill{display:inline-flex;align-items:center;gap:8px;padding:6px 12px;border-radius:999px;border:1px solid var(--line);font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-2);background:#fff}
+.pill .dot{width:6px;height:6px;border-radius:50%;background:var(--accent)}
+
+/* Card surfaces */
+.card{background:#fff;border:1px solid var(--line-2);border-radius:14px}
+.card-soft{background:var(--paper);border:1px solid var(--line-2);border-radius:14px}
+.card-dark{background:var(--navy);color:#E6EDF8;border-radius:14px}
+
+/* Service icon tile */
+.svc-tile{display:flex;flex-direction:column;gap:10px;padding:16px;background:#fff;border:1px solid var(--line-2);border-radius:12px;height:100%}
+.svc-tile .ic{width:36px;height:36px;border-radius:8px;background:linear-gradient(135deg,#E8EFFC,#D6E2F8);color:var(--primary);display:grid;place-items:center}
+.svc-tile h4{margin:0;font-family:'Space Grotesk';font-weight:700;font-size:14px;color:var(--navy)}
+.svc-tile p{margin:0;font-size:11.5px;line-height:1.55;color:var(--ink-2)}
+
+/* Product hero (mobile screen placeholder) */
+.placeholder{background:
+  repeating-linear-gradient(135deg, #EEF2F8 0 8px, #E4EAF4 8px 16px);
+  border:1px dashed #B6C2DB;border-radius:8px;display:grid;place-items:center;color:#7B8AA8;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase}
+
+/* Page nav (rail) */
+.rail{
+  position:fixed;left:24px;top:50%;transform:translateY(-50%);
+  display:flex;flex-direction:column;gap:6px;z-index:50;
+  background:rgba(10,27,61,.85);backdrop-filter:blur(8px);
+  padding:12px 10px;border-radius:14px;border:1px solid rgba(255,255,255,.06)
+}
+.rail button{
+  appearance:none;border:0;background:transparent;color:#9FB1D6;
+  font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;
+  padding:6px 10px;border-radius:8px;cursor:pointer;text-align:left;display:flex;align-items:center;gap:8px;min-width:170px;transition:.15s
+}
+.rail button .num{color:#5C7BB6;font-size:9px}
+.rail button:hover{background:rgba(255,255,255,.06);color:#fff}
+.rail button.active{background:rgba(59,130,246,.18);color:#fff}
+.rail button.active .num{color:var(--accent)}
+
+/* Top toolbar */
+.topbar{
+  position:fixed;top:16px;left:50%;transform:translateX(-50%);
+  display:flex;gap:10px;align-items:center;z-index:50;
+  background:rgba(10,27,61,.85);backdrop-filter:blur(8px);
+  padding:8px 10px;border-radius:999px;border:1px solid rgba(255,255,255,.06);
+  color:#fff;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.12em
+}
+.topbar button{appearance:none;border:0;background:transparent;color:#fff;font:inherit;cursor:pointer;padding:6px 10px;border-radius:999px}
+.topbar button:hover{background:rgba(255,255,255,.08)}
+
+/* Hex bg pattern */
+.hex-pattern{position:absolute;inset:0;pointer-events:none;opacity:.07}
+
+/* Decorative dotted block */
+.dots-corner{position:absolute;width:90px;height:50px;
+  background-image:radial-gradient(circle,#3B82F6 1.4px,transparent 1.4px);
+  background-size:10px 10px}
+
+/* Print */
+@media print{
+  body,html,.stage{background:#fff !important}
+  .stage{padding:0;gap:0;display:block}
+  .page{box-shadow:none;border-radius:0;page-break-after:always;break-after:page;margin:0 auto}
+  .rail,.topbar,#tweaks-root{display:none !important}
+}
+
+/* ============ DARK MODE ============ */
+body.dark{
+  --paper:#0E1726;
+  --paper-2:#162238;
+  --ink:#E6EDF8;
+  --ink-2:#B6C2DB;
+  --muted:#7B8AA8;
+  --line:#1F2D47;
+  --line-2:#243352;
+  --navy-2:#0A1430;
+}
+body.dark .stage{
+  background:
+    radial-gradient(1200px 600px at 20% 0%, rgba(59,130,246,.18), transparent 60%),
+    radial-gradient(900px 500px at 80% 100%, rgba(44,91,184,.16), transparent 60%),
+    #050A18;
+}
+body.dark .page{
+  background:#0E1726;
+  box-shadow:0 30px 80px -20px rgba(0,0,0,.7), 0 8px 24px rgba(0,0,0,.4),
+    inset 0 0 0 1px rgba(255,255,255,.04);
+}
+body.dark .h-display,
+body.dark .h-section{ color:#F1F6FF; }
+body.dark .body{ color:#B6C2DB; }
+body.dark .kicker{ color:#7B8AA8; }
+body.dark .h-eyebrow{ color:#7FA3E0; }
+
+body.dark .card,
+body.dark .card-soft{
+  background:#162238;
+  border-color:#243352;
+  color:#E6EDF8;
+}
+body.dark .card *{ color:inherit; }
+body.dark .card-soft .h-display{ color:#F1F6FF; }
+
+body.dark .svc-tile{
+  background:#162238;
+  border-color:#243352;
+}
+body.dark .svc-tile h4{ color:#F1F6FF; }
+body.dark .svc-tile p{ color:#B6C2DB; }
+body.dark .svc-tile .ic{
+  background:linear-gradient(135deg,#1E3A6E,#2C5BB8);
+  color:#7FBFFF;
+}
+
+body.dark .pill{
+  background:#162238;
+  border-color:#243352;
+  color:#B6C2DB;
+}
+
+body.dark .pagefoot{ color:#5C7BB6; }
+body.dark .pagefoot .rule{ background:#1F2D47; }
+
+body.dark .placeholder{
+  background:repeating-linear-gradient(135deg,#1A2740 0 8px,#243352 8px 16px);
+  border-color:#2E436A;
+  color:#7B8AA8;
+}
+
+body.dark .circuit{ color:#1E3A6E; opacity:.7 !important; }
+body.dark .dotgrid{ background-image:radial-gradient(circle,#2E436A 1.2px,transparent 1.2px); }
+body.dark .dots-corner{ background-image:radial-gradient(circle,#3B82F6 1.4px,transparent 1.4px); }
+
+/* Section chip stays branded — no override */
+
+/* Logo wordmark */
+body.dark .logo-row .name{ color:#F1F6FF; }
+body.dark .logo-row .name small{ color:#B6C2DB; }
+
+/* Inline white surfaces inside pages — gentle fallback */
+body.dark .page [style*="background:#fff"],
+body.dark .page [style*="background: #fff"],
+body.dark .page [style*="background:#FFFFFF"],
+body.dark .page [style*="background:rgb(255,255,255)"]{
+  background:#162238 !important;
+}
+body.dark .page [style*="background:#F7F9FC"],
+body.dark .page [style*="background:#FAFAFA"],
+body.dark .page [style*="background:#F0F4FB"],
+body.dark .page [style*="background:#EDF2FA"],
+body.dark .page [style*="background:#EAF1FB"],
+body.dark .page [style*="background:#E5EBF4"]{
+  background:#1A2740 !important;
+}
+body.dark .page [style*="border:1px solid #E5EBF4"],
+body.dark .page [style*="border:1px solid #EFF3FA"],
+body.dark .page [style*="border-bottom:1px solid #E5EBF4"],
+body.dark .page [style*="borderTop:\"1px solid"],
+body.dark .page [style*="border:1px solid var(--line"]{
+  border-color:#243352 !important;
+}

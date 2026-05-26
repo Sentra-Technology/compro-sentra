@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8"/>
+<title>Sentra Technology — Company Profile</title>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="styles.css"/>
+
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="root"></div>
+
+<script type="text/babel" src="tweaks-panel.jsx"></script>
+<script type="text/babel" src="components/primitives.jsx"></script>
+<script type="text/babel" src="components/pages-intro.jsx"></script>
+<script type="text/babel" src="components/pages-products-1.jsx"></script>
+<script type="text/babel" src="components/pages-products-2.jsx"></script>
+<script type="text/babel" src="components/pages-team.jsx"></script>
+<script type="text/babel" src="components/pages-finale.jsx"></script>
+
+<script type="text/babel">
+const TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/{
+  "primary": "#2C5BB8",
+  "navy": "#0A1B3D",
+  "accent": "#3B82F6",
+  "showCircuit": true,
+  "density": "standard",
+  "dark": true
+}/*EDITMODE-END*/;
+
+function PageWrap({ pageNo, label, children }) {
+  return (
+    <div className="page" id={`page-${pageNo}`} data-screen-label={`${String(pageNo).padStart(2,"0")} ${label}`}>
+      {children}
+    </div>
+  );
+}
+
+const PAGES = [
+  { n:1,  label:"Cover",         comp:PageCover     },
+  { n:2,  label:"About",         comp:PageAbout     },
+  { n:3,  label:"CEO",           comp:PageCEO       },
+  { n:4,  label:"Services",      comp:PageServices  },
+  { n:5,  label:"Smartlock",     comp:PageSmartlock },
+  { n:6,  label:"Safety AI",     comp:PageSafety    },
+  { n:7,  label:"Attendance",    comp:PageAttendance},
+  { n:8,  label:"HRIS",          comp:PageHRIS      },
+  { n:9,  label:"FMS",           comp:PageFMS       },
+  { n:10, label:"sentrAI",       comp:PageSentrAI   },
+  { n:11, label:"Custom Web",    comp:PageWebsite   },
+  { n:12, label:"Integration",   comp:PageIntegration},
+  { n:13, label:"Why Sentra",    comp:PageWhy       },
+  { n:14, label:"Our Team",      comp:PageTeam      },
+  { n:15, label:"Projects",      comp:PageProjects  },
+  { n:16, label:"Browse",        comp:PageBrowse    },
+  { n:17, label:"Contact",       comp:PageContact   },
+];
+
+function App(){
+  const [tweaks, setTweak] = useTweaks(TWEAK_DEFAULTS);
+  const [active, setActive] = React.useState(1);
+
+  // Apply tweaks via CSS vars
+  React.useEffect(()=>{
+    const r = document.documentElement;
+    r.style.setProperty("--primary", tweaks.primary);
+    r.style.setProperty("--navy", tweaks.navy);
+    r.style.setProperty("--accent", tweaks.accent);
+    document.body.classList.toggle("dark", !!tweaks.dark);
+    document.querySelectorAll(".circuit").forEach(el=>{
+      el.style.display = tweaks.showCircuit ? "" : "none";
+    });
+  }, [tweaks]);
+
+  // Track active page in viewport
+  React.useEffect(()=>{
+    const obs = new IntersectionObserver((entries)=>{
+      entries.forEach(e=>{
+        if(e.isIntersecting){
+          const id = parseInt(e.target.id.replace("page-",""),10);
+          if(!isNaN(id)) setActive(id);
+        }
+      });
+    }, { threshold:0.4 });
+    PAGES.forEach(p=>{
+      const el = document.getElementById(`page-${p.n}`);
+      if(el) obs.observe(el);
+    });
+    return ()=>obs.disconnect();
+  },[]);
+
+  const goTo = (n) => {
+    const el = document.getElementById(`page-${n}`);
+    if(el) el.getBoundingClientRect && window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY - 30, behavior:"smooth" });
+  };
+  const next = () => goTo(Math.min(17, active+1));
+  const prev = () => goTo(Math.max(1, active-1));
+
+  return (
+    <>
+      {/* Topbar */}
+      <div className="topbar">
+        <button onClick={prev}>← Prev</button>
+        <span style={{ minWidth:80, textAlign:"center" }}>{String(active).padStart(2,"0")} / 17</span>
+        <button onClick={next}>Next →</button>
+        <span style={{ width:1, height:18, background:"rgba(255,255,255,.15)", margin:"0 4px" }}/>
+        <button onClick={()=>window.print()}>Print PDF</button>
+      </div>
+
+      {/* Side rail */}
+      <div className="rail">
+        {PAGES.map(p=>(
+          <button key={p.n} onClick={()=>goTo(p.n)} className={active===p.n?"active":""}>
+            <span className="num">{String(p.n).padStart(2,"0")}</span>
+            <span>{p.label}</span>
+          </button>
+        ))}
+      </div>
+
+      {/* Stage */}
+      <div className="stage">
+        {PAGES.map(({n,label,comp:C})=>(
+          <PageWrap key={n} pageNo={n} label={label}>
+            <C/>
+          </PageWrap>
+        ))}
+      </div>
+
+      {/* Tweaks */}
+      <TweaksPanel title="Tweaks · Sentra Compro">
+        <TweakSection title="Brand">
+          <TweakColor label="Primary" value={tweaks.primary} onChange={v=>setTweak("primary", v)}/>
+          <TweakColor label="Navy"    value={tweaks.navy}    onChange={v=>setTweak("navy", v)}/>
+          <TweakColor label="Accent"  value={tweaks.accent}  onChange={v=>setTweak("accent", v)}/>
+        </TweakSection>
+        <TweakSection title="Decoration">
+          <TweakToggle label="Dark mode" value={tweaks.dark} onChange={v=>setTweak("dark", v)}/>
+          <TweakToggle label="Circuit ornaments" value={tweaks.showCircuit} onChange={v=>setTweak("showCircuit", v)}/>
+        </TweakSection>
+        <TweakSection title="Quick palettes">
+          <div style={{ display:"flex", gap:6, flexWrap:"wrap" }}>
+            {[
+              ["Sentra Blue", "#2C5BB8","#0A1B3D","#3B82F6"],
+              ["Mining Amber","#F59E0B","#1F2937","#FBBF24"],
+              ["Forest Green","#059669","#064E3B","#10B981"],
+              ["Royal Purple","#7C3AED","#1E1B4B","#A78BFA"],
+            ].map(([name,p,n,a])=>(
+              <button key={name} onClick={()=>{ setTweak({primary:p, navy:n, accent:a}); }}
+                style={{ padding:"6px 10px", borderRadius:6, border:"1px solid #e2e8f0", background:"#fff", cursor:"pointer", fontFamily:"Space Grotesk", fontWeight:600, fontSize:11, display:"flex", alignItems:"center", gap:6 }}>
+                <span style={{ width:10, height:10, borderRadius:"50%", background:p }}/>
+                {name}
+              </button>
+            ))}
+          </div>
+        </TweakSection>
+      </TweaksPanel>
+    </>
+  );
+}
+
+ReactDOM.createRoot(document.getElementById("root")).render(<App/>);
+</script>
+</body>
+</html>
