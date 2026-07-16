@@ -197,19 +197,20 @@ function ProductVisual({ color, icon }) {
   );
 }
 
-/* PORTFOLIO with category filter */
+/* PORTFOLIO with category filter — projects & imagery diambil dari company profile Sentra */
 function Portfolio() {
   const projects = [
-    { year:"2025", cat:"IoT",      client:"PT. Tunas Inti Abadi",     title:"Fleet Telematics — 120 Heavy Trucks",    tags:["FMS","Telematics"], color:"#F59E0B" },
-    { year:"2024", cat:"Software", client:"Universitas Mulawarman",   title:"Smart Attendance + HRIS Pilot",          tags:["Face Reco","HRIS"], color:"#2C5BB8" },
-    { year:"2025", cat:"Software", client:"Pemkab Barito Utara",     title:"Portal POMPy BATARA — One Map Geospatial", tags:["Web","GIS"],        color:"#10B981" },
-    { year:"2024", cat:"IoT",      client:"RSUD A.W. Sjahranie",      title:"Smartlock — 80 Door Access System",      tags:["IoT","Access"],     color:"#0EA5E9" },
-    { year:"2025", cat:"AI",       client:"PT. Multi Harapan Utama",  title:"AI Safety Detection — Plant-3",          tags:["AI","Vision"],      color:"#EF4444" },
-    { year:"2024", cat:"Software", client:"SMK Negeri Samarinda",     title:"School Management & E-Learning",         tags:["Web","SaaS"],       color:"#8B5CF6" },
-    { year:"2025", cat:"AI",       client:"Bukit Baiduri Energi",     title:"sentrAI Internal Knowledge Base",        tags:["LLM","On-Prem"],    color:"#7C3AED" },
-    { year:"2024", cat:"IoT",      client:"Kideco Jaya Agung",        title:"CCTV + Network Infrastructure Rollout",  tags:["Network","CCTV"],   color:"#06B6D4" },
-    { year:"2025", cat:"Software", client:"BPD Kaltimtara",           title:"Internal Banking Portal Modernization",  tags:["Web","Banking"],    color:"#475569" },
-    { year:"2025", cat:"IoT",      client:"Pemkot Samarinda",         title:"Custom KIOSK — Self-Service Public Services", tags:["KIOSK","Touchscreen","e-KTP"], color:"#EC4899" },
+    { year:"2025", cat:"IoT",      client:"Kontraktor Tambang · Kaltim",   title:"Fleet Management System — Telematik Armada Hauling", tags:["FMS","Telematics","CAN-Bus"], color:"#F59E0B", img:"/assets/projects/fms.jpg" },
+    { year:"2025", cat:"Software", client:"Pemkab Barito Utara",           title:"POMPy BATARA — Portal One Map & Dashboard Daerah",   tags:["Web","GIS","One Map"],        color:"#10B981", img:"/assets/projects/barito-dash.jpg" },
+    { year:"2024", cat:"Software", client:"Pemkab Barito Utara",           title:"Dashboard Geospasial DAPODIK — Pemetaan Sekolah",    tags:["GIS","Data Pendidikan"],      color:"#06B6D4", img:"/assets/projects/dapodik.jpg" },
+    { year:"2025", cat:"AI",       client:"Universitas Mulawarman",        title:"Smart Attendance — Absensi Face Recognition",        tags:["Face Reco","CCTV","Mobile"],  color:"#2C5BB8", img:"/assets/projects/attendance.jpg" },
+    { year:"2025", cat:"IoT",      client:"Fakultas Farmasi Unmul",        title:"Sentra Smartlock — Akses Digital Gedung Kampus",     tags:["IoT","Access Control"],       color:"#0EA5E9", img:"/assets/projects/smartlock.jpg" },
+    { year:"2025", cat:"AI",       client:"PT. Multi Harapan Utama",       title:"Deteksi Atribut Keselamatan (APD) Berbasis AI",      tags:["AI","Vision","K3"],           color:"#EF4444", img:"/assets/projects/safety.jpg" },
+    { year:"2024", cat:"Software", client:"Bukit Baiduri Energi",          title:"HRIS Sentra — Absensi, Payroll & Slip Gaji Mobile",  tags:["HRIS","Mobile","Payroll"],    color:"#7C3AED", img:"/assets/projects/hris.jpg" },
+    { year:"2024", cat:"Software", client:"FEB Universitas Mulawarman",    title:"Website & Sistem Informasi Fakultas",                tags:["Web","CMS"],                  color:"#8B5CF6", img:"/assets/projects/feb-unmul.jpg" },
+    { year:"2023", cat:"Software", client:"Fakultas Farmasi Unmul",        title:"Website Resmi Fakultas Farmasi",                     tags:["Web","CMS"],                  color:"#14B8A6", img:"/assets/projects/farmasi.jpg" },
+    { year:"2024", cat:"AI",       client:"Intelligence Media Management", title:"Dashboard Media Monitoring & Analitik Isu",          tags:["NLP","Analytics"],            color:"#E11D48", img:"/assets/projects/imm.jpg" },
+    { year:"2025", cat:"AI",       client:"Platform Analitik Media Sosial", title:"Dashboard Analisis Sentimen & Social Listening",    tags:["NLP","Social Listening"],     color:"#475569", img:"/assets/projects/sentiment.jpg" },
   ];
   const cats = ["All", "IoT", "AI", "Software"];
   const [filter, setFilter] = React.useState("All");
@@ -221,7 +222,7 @@ function Portfolio() {
         <SectionHead
           label="Sudah berjalan di lapangan"
           title="Solusi yang nyata bekerja."
-          lede="Sembilan dari 50+ proyek lintas industri sepanjang 2024–2025."
+          lede="Sebelas dari 50+ proyek lintas industri sepanjang 2023–2025 — pemerintahan, pendidikan, dan industri."
           right={{ num: "50+", desc: "Proyek terdeliver\n2019 – sekarang" }}
         />
 
@@ -243,18 +244,10 @@ function Portfolio() {
         <div className="proj-grid">
           {filtered.map((p, i) => (
             <div className="proj-card proj-anim" key={p.title} style={{ animationDelay: `${i * 60}ms`, ["--pc"]: p.color }}>
-              <div className="proj-img" style={{
-                background: `linear-gradient(135deg, ${p.color}33 0%, ${p.color}99 100%)`,
-              }}>
+              <div className="proj-img">
+                <img src={p.img} alt={`${p.title} — ${p.client}`} loading="lazy"/>
                 <span className="idx">{p.cat.toUpperCase()} · {String(i+1).padStart(2,"0")}</span>
                 <span className="yr" style={{ color: p.color }}>{p.year}</span>
-                <svg style={{ position:"absolute", right:0, bottom:-12, opacity:.5, zIndex:1 }}
-                     width="220" height="120" viewBox="0 0 220 120">
-                  <path d="M0 90 L50 90 L70 40 L120 40 L140 90 L220 90"
-                        stroke="#fff" strokeWidth="2" fill="none"/>
-                  <circle cx="70" cy="40" r="4" fill="#fff"/>
-                  <circle cx="120" cy="40" r="4" fill="#fff"/>
-                </svg>
               </div>
               <div className="proj-body">
                 <div className="client" style={{ color: p.color }}>{p.client}</div>

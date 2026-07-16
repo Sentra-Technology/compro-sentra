@@ -1495,13 +1495,23 @@ section.micro { padding: 40px 0; }
   position: relative;
   aspect-ratio: 16/10;
   overflow: hidden;
+  background: var(--surface-2);
 }
+.proj-img > img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  transition: transform .6s ease;
+}
+.proj-card:hover .proj-img > img { transform: scale(1.04); }
 .proj-img::after {
   content: "";
   position: absolute; inset: 0;
-  background-image: radial-gradient(circle, rgba(255,255,255,0.4) 1px, transparent 1px);
-  background-size: 14px 14px;
-  opacity: .35;
+  background: linear-gradient(180deg, rgba(15,23,42,0.28) 0%, rgba(15,23,42,0) 38%);
+  pointer-events: none;
 }
 .proj-img .yr {
   position: absolute;
@@ -1803,6 +1813,7 @@ section.micro { padding: 40px 0; }
   0%, 100% { transform: scale(1); opacity: .15; }
   50%      { transform: scale(1.15); opacity: .22; }
 }
+.contact-eyebrow { color: var(--gold-2); }
 .contact-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -2996,17 +3007,23 @@ section.micro { padding: 40px 0; }
   z-index: 5;
 }
 .partner-mark {
-  width: 56px;
-  height: 56px;
+  width: 100%;
+  height: 76px;
   display: grid;
   place-items: center;
-  margin-bottom: 4px;
+  margin-bottom: 10px;
+  padding: 12px 18px;
+  background: #FFFFFF;
+  border: 1px solid var(--line-2);
+  border-radius: 12px;
   transition: transform .35s;
 }
-.partner-card:hover .partner-mark { transform: scale(1.1); }
+.partner-card:hover .partner-mark { transform: scale(1.05); }
 .partner-mark img {
-  width: 100%;
-  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
   object-fit: contain;
 }
 .partner-wordmark {
@@ -3281,7 +3298,7 @@ section.micro { padding: 40px 0; }
   border-radius: 16px;
   overflow: hidden;
   border: 1px solid var(--line-2);
-  aspect-ratio: 16/10;
+  aspect-ratio: 2/1;
   box-shadow: 0 20px 40px -16px rgba(0,0,0,0.5);
   transition: transform .35s;
 }
@@ -3495,13 +3512,51 @@ body.light .hv-disc {
     inset 0 -20px 40px rgba(15,26,46,0.08);
 }
 body.light .hv-disc img { filter: drop-shadow(0 4px 10px rgba(74,139,255,0.25)) brightness(1); }
-body.light .contact-card { background: linear-gradient(135deg, #1E3A8A 0%, #1E40AF 100%); }
+/* Light mode — kartu kontak mengikuti palet biru royal brosur Sentra (tanpa emas) */
+body.light .contact-card {
+  background: linear-gradient(135deg, #2E4E9E 0%, #4370C1 60%, #5C86D6 100%);
+  border-color: rgba(255,255,255,0.18);
+}
+body.light .contact-card::before {
+  background: radial-gradient(circle, #FFFFFF 0%, transparent 65%);
+  opacity: .12;
+}
 body.light .contact-card .h-display { color: #fff; }
-body.light .contact-card .lede { color: rgba(255,255,255,0.85); }
+body.light .contact-card .lede { color: rgba(255,255,255,0.88); }
 body.light .contact-card .v { color: #fff; }
-body.light .contact-card .field label { color: #FAE7CA; }
+body.light .contact-eyebrow { color: #C9DCFF; }
+body.light .contact-card .contact-row {
+  background: rgba(255,255,255,0.08);
+  border-color: rgba(255,255,255,0.16);
+}
+body.light .contact-card .contact-row:hover {
+  background: rgba(255,255,255,0.14);
+  border-color: rgba(255,255,255,0.45);
+}
+body.light .contact-card .contact-row .ic { background: #FFFFFF; color: #2E4E9E; }
+body.light .contact-card .contact-row .k { color: #C9DCFF; }
+body.light .contact-card .field label { color: #C9DCFF; }
 body.light .contact-card .field input,
-body.light .contact-card .field textarea { color: #fff; }
+body.light .contact-card .field textarea {
+  color: #fff;
+  background: rgba(255,255,255,0.10);
+  border-color: rgba(255,255,255,0.20);
+}
+body.light .contact-card .field input::placeholder,
+body.light .contact-card .field textarea::placeholder { color: rgba(255,255,255,0.55); }
+body.light .contact-card .field input:focus,
+body.light .contact-card .field textarea:focus {
+  border-color: rgba(255,255,255,0.75);
+  background: rgba(255,255,255,0.16);
+}
+body.light .contact-card .form-submit {
+  background: #FFFFFF;
+  color: #2E4E9E;
+}
+body.light .contact-card .form-submit:hover {
+  background: #EAF1FF;
+  box-shadow: 0 10px 24px -10px rgba(15,23,42,0.45);
+}
 body.light .cctv-frame { background: linear-gradient(180deg, #1E2D4A 0%, #0F1A2E 100%); }
 body.light .nav-links a { color: var(--ink-2); }
 body.light .nav-links a:hover { background: rgba(0,0,0,0.04); color: var(--ink); }

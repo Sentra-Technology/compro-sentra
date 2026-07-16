@@ -3,7 +3,7 @@
 import React from "react";
 import { SectionHead } from "./web-about-services";
 
-// Website — Partnership section with brand logos via Simple Icons CDN + float animations
+// Website — Partnership section with real brand logos (local assets) + float animations
 
 function Partnership() {
   const partners = [
@@ -12,34 +12,28 @@ function Partnership() {
       category: "Networking & Infrastructure",
       desc: "Pemasok perangkat jaringan enterprise untuk implementasi konektivitas Sentra.",
       color: "#4ACBD6",
-      // Simple Icons CDN — open-source brand icon library
-      logo: "https://cdn.simpleicons.org/tplink/4ACBD6",
+      logo: "/assets/partners/tplink.png",
     },
     {
       name: "VIGI",
-      category: "Surveillance Cameras",
+      category: "AI Surveillance",
       desc: "Kamera CCTV professional yang menjadi dasar lapisan AI vision Sentra.",
       color: "#10B981",
-      // VIGI doesn't have an SI entry — wordmark fallback
-      wordmark: "VIGI",
-      typeWeight: 900,
-      letterSpacing: ".05em",
+      logo: "/assets/partners/vigi.png",
     },
     {
       name: "Teltonika",
       category: "IoT Telematics",
-      desc: "Perangkat tracking dan gateway industrial untuk solusi fleet & remote monitoring.",
-      color: "#E60028",
-      wordmark: "TELTONIKA",
-      typeWeight: 700,
-      letterSpacing: ".18em",
+      desc: "Perangkat tracking dan gateway industrial berstandar Eropa untuk solusi fleet & remote monitoring.",
+      color: "#1B2F7E",
+      logo: "/assets/partners/teltonika.png",
     },
     {
       name: "Lenovo",
       category: "Enterprise Computing",
       desc: "Server, workstation, dan perangkat enterprise untuk deployment on-premise.",
       color: "#E2231A",
-      logo: "https://cdn.simpleicons.org/lenovo/E2231A",
+      logo: "/assets/partners/lenovo.png",
     },
     {
       name: "Institut Teknologi Kalimantan",
@@ -47,9 +41,7 @@ function Partnership() {
       category: "Academic Partner",
       desc: "Kolaborasi riset, magang, dan pengembangan talenta teknologi di Kalimantan.",
       color: "#1D4ED8",
-      wordmark: "ITK",
-      typeWeight: 800,
-      letterSpacing: ".12em",
+      logo: "/assets/partners/itk.png",
     },
   ];
 
@@ -72,26 +64,7 @@ function Partnership() {
                    animationDelay: `${i * 0.4}s`,
                  }}>
               <div className="partner-mark">
-                {p.logo ? (
-                  <img src={p.logo} alt={`${p.name} logo`}
-                       loading="lazy"
-                       onError={(e) => {
-                         // Fallback to wordmark if CDN fails
-                         e.target.style.display = "none";
-                         e.target.nextSibling && (e.target.nextSibling.style.display = "block");
-                       }}/>
-                ) : null}
-                {p.wordmark && (
-                  <span className="partner-wordmark"
-                        style={{
-                          color: p.color,
-                          fontWeight: p.typeWeight,
-                          letterSpacing: p.letterSpacing,
-                          display: p.logo ? "none" : "block",
-                        }}>
-                    {p.wordmark}
-                  </span>
-                )}
+                <img src={p.logo} alt={`${p.name} logo`} loading="lazy"/>
               </div>
               <div className="partner-name">{p.shortName || p.name}</div>
               {p.shortName && <div className="partner-full">{p.name}</div>}

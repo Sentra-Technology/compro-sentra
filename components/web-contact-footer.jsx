@@ -18,7 +18,7 @@ function Contact() {
         <div className="contact-card reveal">
           <div className="contact-grid">
             <div>
-              <p className="section-label" style={{ color: "var(--gold-2)" }}>Get in touch</p>
+              <p className="section-label contact-eyebrow">Get in touch</p>
               <h2 className="h-display">Mari berkolaborasi.</h2>
               <p className="lede">
                 Ceritakan tantangan operasional Anda — kami balas dalam 1×24 jam.
@@ -86,8 +86,10 @@ function Footer() {
           <div>
             <img className="footer-logo" src="/assets/sentra-logo.png" alt="Sentra Technology"/>
             <p style={{ fontSize: 13.5, color: "var(--ink-2)", lineHeight: 1.6, margin: "0 0 16px", maxWidth: 320 }}>
-              PT. Sentra Visi Teknologi — IoT, AI, dan software untuk
-              pemerintahan, industri, dan korporasi Indonesia.
+              PT. Sentra Visi Teknologi (Sentra Technology) — pusat teknologi
+              berbasis di Samarinda yang menghadirkan solusi AI, IoT, dan
+              pengembangan software untuk mendorong transformasi digital
+              pemerintahan, industri, pendidikan, dan korporasi di Indonesia.
             </p>
             <div style={{ display: "flex", gap: 8 }}>
               {["globe", "mail", "phone"].map(ic => {
