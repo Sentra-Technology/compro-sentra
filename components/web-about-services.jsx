@@ -75,6 +75,31 @@ function About() {
                 </ul>
               </div>
             </div>
+
+            {/* Statistik ringkas — memadatkan kolom naratif */}
+            <div className="ac-mini-stats">
+              {[
+                { v: "6+",  k: "Tahun beroperasi" },
+                { v: "50+", k: "Proyek terdeliver" },
+                { v: "13",  k: "Ahli in-house" },
+                { v: "11",  k: "Lini produk" },
+              ].map(s => (
+                <div className="ac-mini-stat" key={s.k}>
+                  <div className="v">{s.v}</div>
+                  <div className="k">{s.k}</div>
+                </div>
+              ))}
+            </div>
+
+            {/* Sektor yang dilayani */}
+            <div className="ac-sectors">
+              <div className="ac-sectors-label">Sektor yang kami layani</div>
+              <div className="ac-sectors-chips">
+                {["Pemerintahan", "Industri & Tambang", "Pendidikan", "Kesehatan", "Perbankan", "Media & Korporasi"].map(s => (
+                  <span className="ac-sector-chip" key={s}>{s}</span>
+                ))}
+              </div>
+            </div>
           </div>
 
           <div className="ac-side reveal-right">

@@ -12,7 +12,7 @@ function Team() {
       code: "DIV-01",
       name: "Business",
       tagline: "Client success, sales, delivery, dan after-sales.",
-      color: "#D4A571", icon: "building",
+      color: "#8FB1E8", icon: "building",
       members: [
         { name: "Hendra Setiawan",   role: "Head of Business",     img: "hs", tag: "Lead" },
         { name: "Rina Kusuma",       role: "Project Manager",      img: "rk" },

@@ -12,7 +12,7 @@ function CCTV() {
       t: "Deteksi orang & kendaraan",
       d: "Mengenali manusia, kendaraan, dan plat nomor secara real-time — bukan sekadar gerakan acak. False alarm berkurang hingga 90%.",
       anim: "detect",
-      color: "#D4A571",
+      color: "#06B6D4",
     },
     {
       ic: "shield",
@@ -81,7 +81,11 @@ function CCTV() {
             </div>
           </div>
 
-          <CCTVPreview/>
+          <div className="cctv-frame cctv-photo">
+            <img src="/assets/cctv/hero.jpg" alt="Jaringan kamera CCTV — lapisan AI Sentra"/>
+            <span className="cctv-photo-label">CAM-GRID · AI LAYER AKTIF</span>
+            <span className="cctv-photo-rec"><span className="dot"/>REC</span>
+          </div>
         </div>
 
         <div className="cctv-features">
@@ -113,23 +117,38 @@ function CCTV() {
           <div className="cctv-proof-grid">
             {[
               {
-                img: "/assets/projects/cctv-ppe.jpg", pos: "center top",
+                img: "/assets/cctv/gal-ppe.jpg",
                 t: "Deteksi APD real-time",
-                d: "Helm, rompi, sabuk & sepatu safety terdeteksi otomatis dari CCTV.",
+                d: "Helm, rompi, dan alat pelindung diri terdeteksi otomatis di area kerja.",
               },
               {
-                img: "/assets/projects/cctv-face.jpg", pos: "left center",
-                t: "Face recognition di stream CCTV",
-                d: "Identifikasi wajah langsung dari kamera existing, tanpa hardware baru.",
-              },
-              {
-                img: "/assets/projects/cctv-field.jpg", pos: "center",
+                img: "/assets/cctv/gal-existing.jpg",
                 t: "Berjalan di CCTV existing",
-                d: "Tanpa ganti kamera — lapisan AI Sentra dipasang di atas perangkat yang sudah ada.",
+                d: "Tanpa ganti kamera — lapisan AI dipasang di atas perangkat yang sudah ada.",
+              },
+              {
+                img: "/assets/cctv/gal-monitor.jpg",
+                t: "Monitoring terpusat 24/7",
+                d: "Semua kamera dan sensor terpantau dari satu ruang kendali operasional.",
+              },
+              {
+                img: "/assets/cctv/gal-mobile.jpg",
+                t: "Alert langsung ke mobile",
+                d: "Notifikasi kejadian terkirim instan ke ponsel tim keamanan dan safety.",
+              },
+              {
+                img: "/assets/cctv/gal-traffic.jpg",
+                t: "Analitik kendaraan & lalu lintas",
+                d: "Perhitungan volume, klasifikasi kendaraan, hingga pengenalan plat nomor.",
+              },
+              {
+                img: "/assets/cctv/gal-dashboard.jpg",
+                t: "Dashboard operasional real-time",
+                d: "Setiap event terekap otomatis menjadi insight yang siap dianalisis.",
               },
             ].map(s => (
               <figure className="cctv-shot" key={s.t}>
-                <img src={s.img} alt={s.t} loading="lazy" style={{ objectPosition: s.pos }}/>
+                <img src={s.img} alt={s.t} loading="lazy"/>
                 <figcaption>
                   <strong>{s.t}</strong>
                   <span>{s.d}</span>
@@ -255,7 +274,7 @@ function FeatIllu({ kind, color }) {
           <rect x="102" y="26" width="40" height="2" rx="1" fill="rgba(255,255,255,0.5)"/>
         </g>
         <g className="nf-card c2">
-          <rect x="80" y="42" width="105" height="22" rx="4" fill="rgba(212,165,113,0.15)" stroke="var(--gold)" strokeWidth="1"/>
+          <rect x="80" y="42" width="105" height="22" rx="4" fill="rgba(74,139,255,0.15)" stroke="var(--gold)" strokeWidth="1"/>
           <circle cx="92" cy="53" r="4" fill="var(--gold)"/>
           <rect x="102" y="48" width="70" height="3" rx="1.5" fill="var(--gold)" opacity="0.8"/>
           <rect x="102" y="54" width="50" height="2" rx="1" fill="rgba(255,255,255,0.5)"/>
@@ -309,7 +328,7 @@ function CCTVPreview() {
           <rect x="300" y="110" width="60" height="70"/>
           <rect x="365" y="95" width="35" height="85"/>
         </g>
-        <g fill="#D4A571" opacity="0.4">
+        <g fill="#8FB1E8" opacity="0.4">
           <rect x="10" y="115" width="4" height="6"/>
           <rect x="25" y="120" width="4" height="6"/>
           <rect x="40" y="115" width="4" height="6"/>
