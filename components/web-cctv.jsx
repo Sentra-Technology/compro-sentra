@@ -2,54 +2,23 @@
 
 import React from "react";
 import { Icon } from "./primitives";
+import { useLang } from "./i18n";
 
 // Website — CCTV Analytics (flagship) — each feature has hover illustration
 
 function CCTV() {
-  const features = [
-    {
-      ic: "user",
-      t: "Deteksi orang & kendaraan",
-      d: "Mengenali manusia, kendaraan, dan plat nomor secara real-time — bukan sekadar gerakan acak. False alarm berkurang hingga 90%.",
-      anim: "detect",
-      color: "#06B6D4",
-    },
-    {
-      ic: "shield",
-      t: "Active deterrence",
-      d: "Alarm visual & audio otomatis aktif ketika perilaku mencurigakan terdeteksi di zona terlarang — siang maupun malam.",
-      anim: "alarm",
-      color: "#EF4444",
-    },
-    {
-      ic: "cam",
-      t: "Smart event triggers",
-      d: "Line crossing, intrusion, loitering, hingga deteksi APD — semua sebagai trigger otomatis tanpa operator manual.",
-      anim: "trigger",
-      color: "#4A8BFF",
-    },
-    {
-      ic: "data",
-      t: "Multi-target tracking",
-      d: "Mengikuti beberapa objek sekaligus dalam satu frame — cocok untuk area padat seperti gerbang pabrik atau pintu masuk gedung.",
-      anim: "track",
-      color: "#2DD4BF",
-    },
-    {
-      ic: "history",
-      t: "Smart playback",
-      d: "Cari rekaman berdasarkan objek (mis. 'kendaraan merah, jam 14:00–15:00') — bukan menggulir berjam-jam.",
-      anim: "playback",
-      color: "#8B5CF6",
-    },
-    {
-      ic: "bell",
-      t: "Notifikasi instan",
-      d: "Alert langsung ke dashboard, email, atau WhatsApp tim safety. Setiap event dilengkapi cuplikan visual & timestamp.",
-      anim: "notify",
-      color: "#10B981",
-    },
+  const { t } = useLang();
+  const META = [
+    { ic: "user",    anim: "detect",   color: "#06B6D4" },
+    { ic: "shield",  anim: "alarm",    color: "#EF4444" },
+    { ic: "cam",     anim: "trigger",  color: "#4A8BFF" },
+    { ic: "data",    anim: "track",    color: "#2DD4BF" },
+    { ic: "history", anim: "playback", color: "#8B5CF6" },
+    { ic: "bell",    anim: "notify",   color: "#10B981" },
   ];
+  const features = META.map((m, i) => ({ ...m, ...t.cctv.features[i] }));
+  const PROOF_IMGS = ["gal-ppe", "gal-existing", "gal-monitor", "gal-mobile", "gal-traffic", "gal-dashboard"];
+  const proof = PROOF_IMGS.map((img, i) => ({ img: `/assets/cctv/${img}.jpg`, ...t.cctv.proof[i] }));
 
   return (
     <section className="cctv" id="cctv">
@@ -60,23 +29,19 @@ function CCTV() {
               <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor">
                 <circle cx="12" cy="12" r="4"/>
               </svg>
-              Flagship · CCTV Analytics
+              {t.cctv.flag}
             </span>
             <h2 className="h-section">
-              CCTV yang <span className="gold">benar-benar melihat</span> — bukan hanya merekam.
+              {t.cctv.hPre} <span className="gold">{t.cctv.hHl}</span> {t.cctv.hPost}
             </h2>
-            <p>
-              Lapisan AI Sentra mengubah CCTV existing menjadi sistem yang
-              memahami konteks: siapa, apa, di mana, dan apakah sesuatu butuh
-              perhatian — tanpa harus mengganti perangkat keras Anda.
-            </p>
+            <p>{t.cctv.p}</p>
             <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
               <a href="#contact" className="btn btn-primary">
-                Demo CCTV AI
+                {t.cctv.cta1}
                 <Icon.arrow/>
               </a>
               <a href="#produk" className="btn btn-ghost">
-                Spesifikasi lengkap
+                {t.cctv.cta2}
               </a>
             </div>
           </div>
@@ -102,7 +67,7 @@ function CCTV() {
                 <div className="cctv-feat-illu">
                   <FeatIllu kind={f.anim} color={f.color}/>
                 </div>
-                <div className="cctv-feat-hint">Arahkan kursor →</div>
+                <div className="cctv-feat-hint">{t.cctv.hint}</div>
               </div>
             );
           })}
@@ -111,42 +76,11 @@ function CCTV() {
         {/* Dokumentasi nyata dari implementasi di lapangan */}
         <div className="cctv-proof reveal">
           <div className="cctv-proof-head">
-            <p className="section-label">Bukti di lapangan</p>
-            <h3>Bukan konsep — sudah berjalan.</h3>
+            <p className="section-label">{t.cctv.proofLabel}</p>
+            <h3>{t.cctv.proofH}</h3>
           </div>
           <div className="cctv-proof-grid">
-            {[
-              {
-                img: "/assets/cctv/gal-ppe.jpg",
-                t: "Deteksi APD real-time",
-                d: "Helm, rompi, dan alat pelindung diri terdeteksi otomatis di area kerja.",
-              },
-              {
-                img: "/assets/cctv/gal-existing.jpg",
-                t: "Berjalan di CCTV existing",
-                d: "Tanpa ganti kamera — lapisan AI dipasang di atas perangkat yang sudah ada.",
-              },
-              {
-                img: "/assets/cctv/gal-monitor.jpg",
-                t: "Monitoring terpusat 24/7",
-                d: "Semua kamera dan sensor terpantau dari satu ruang kendali operasional.",
-              },
-              {
-                img: "/assets/cctv/gal-mobile.jpg",
-                t: "Alert langsung ke mobile",
-                d: "Notifikasi kejadian terkirim instan ke ponsel tim keamanan dan safety.",
-              },
-              {
-                img: "/assets/cctv/gal-traffic.jpg",
-                t: "Analitik kendaraan & lalu lintas",
-                d: "Perhitungan volume, klasifikasi kendaraan, hingga pengenalan plat nomor.",
-              },
-              {
-                img: "/assets/cctv/gal-dashboard.jpg",
-                t: "Dashboard operasional real-time",
-                d: "Setiap event terekap otomatis menjadi insight yang siap dianalisis.",
-              },
-            ].map(s => (
+            {proof.map(s => (
               <figure className="cctv-shot" key={s.t}>
                 <img src={s.img} alt={s.t} loading="lazy"/>
                 <figcaption>

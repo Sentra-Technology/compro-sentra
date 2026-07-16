@@ -2,10 +2,12 @@
 
 import React from "react";
 import { Icon } from "./primitives";
+import { useLang } from "./i18n";
 
 // Website — Nav + Hero v4
 
 function Nav() {
+  const { t } = useLang();
   const [scrolled, setScrolled] = React.useState(false);
   React.useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 30);
@@ -13,16 +15,8 @@ function Nav() {
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
-  const links = [
-    ["Tentang",     "#tentang"],
-    ["Solusi",      "#solusi"],
-    ["CCTV AI",     "#cctv"],
-    ["Produk",      "#produk"],
-    ["Partner",     "#partner"],
-    ["Portfolio",   "#portfolio"],
-    ["Tim",         "#tim"],
-    ["Kontak",      "#contact"],
-  ];
+  const anchors = ["#tentang", "#solusi", "#cctv", "#produk", "#partner", "#portfolio", "#tim", "#contact"];
+  const links = anchors.map((h, i) => [t.nav[i], h]);
   return (
     <nav className={`nav ${scrolled ? "scrolled" : ""}`}>
       <div className="wrap nav-inner">
@@ -73,6 +67,7 @@ function ThemeToggle() {
 }
 
 function LangSelector() {
+  const { lang, setLang } = useLang();
   const langs = [
     { code: "ID", name: "Bahasa Indonesia", flag: <FlagID/> },
     { code: "EN", name: "English",          flag: <FlagEN/> },
@@ -81,15 +76,9 @@ function LangSelector() {
     { code: "MS", name: "Bahasa Melayu",    flag: <FlagMS/> },
   ];
   const [open, setOpen] = React.useState(false);
-  const [active, setActive] = React.useState("ID");
+  const active = lang;
   const ref = React.useRef(null);
 
-  React.useEffect(() => {
-    try {
-      const saved = localStorage.getItem("sentra-lang");
-      if (saved) setActive(saved);
-    } catch (e) {}
-  }, []);
   React.useEffect(() => {
     const onDoc = (e) => { if (ref.current && !ref.current.contains(e.target)) setOpen(false); };
     document.addEventListener("click", onDoc);
@@ -97,9 +86,8 @@ function LangSelector() {
   }, []);
 
   const pick = (code) => {
-    setActive(code);
+    setLang(code);
     setOpen(false);
-    try { localStorage.setItem("sentra-lang", code); } catch (e) {}
   };
 
   const activeLang = langs.find(l => l.code === active) || langs[0];
@@ -228,6 +216,7 @@ function WordReveal({ text, delay = 0 }) {
 }
 
 function Hero() {
+  const { t, lang } = useLang();
   const nodes = [
     { cls: "n1", ic: "cam"    },
     { cls: "n2", ic: "shield" },
@@ -240,24 +229,21 @@ function Hero() {
     <section className="hero" id="top">
       <div className="wrap">
         <div className="hero-grid">
-          <div>
+          <div key={lang}>
             <h1 className="h-display">
-              <WordReveal text="Mitra Anda untuk" delay={150} />
+              <WordReveal text={t.hero.t1} delay={150} />
               <br />
               <span className="accent">
-                <WordReveal text="keputusan yang lebih cerdas." delay={400} />
+                <WordReveal text={t.hero.t2} delay={400} />
               </span>
             </h1>
 
             <p className="lede" style={{ opacity: 0, animation: "wordIn .7s .9s forwards" }}>
-              Memberdayakan transformasi digital melalui solusi AI, computer vision,
-              dan analitik data — dari pengawasan cerdas hingga sistem enterprise —
-              dirancang untuk membantu organisasi Anda mengambil keputusan yang
-              lebih cepat, presisi, dan berdampak.
+              {t.hero.lede}
             </p>
             <div className="hero-ctas" style={{ opacity: 0, animation: "wordIn .7s 1.1s forwards" }}>
               <a href="#contact" className="btn btn-primary">
-                Mulai konsultasi
+                {t.hero.cta}
                 <Icon.arrow />
               </a>
             </div>

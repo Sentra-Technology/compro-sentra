@@ -4,87 +4,27 @@ import React from "react";
 import { Icon } from "./primitives";
 import { SectionHead } from "./web-about-services";
 import { ProductPreview } from "./web-product-previews";
+import { useLang } from "./i18n";
 
 // Website — Product Showcase (tabbed) + Portfolio (filterable)
 
-const PRODUCTS = [
-  {
-    code: "SL-01", name: "Smartlock", icon: "lock", color: "#0EA5E9",
-    tagline: "Akses pintu pintar.",
-    desc: "Kontrol akses ruangan dari satu dashboard, dengan audit trail lengkap.",
-    features: ["Kartu, PIN, atau app", "Audit log real-time", "Integrasi HRIS", "Offline mode"],
-    img: "/assets/products/smartlock.jpg",
-  },
-  {
-    code: "AI-02", name: "Safety AI", icon: "shield", color: "#EF4444",
-    tagline: "Computer vision untuk K3.",
-    desc: "Deteksi otomatis pelanggaran APD & area terlarang dari CCTV existing.",
-    features: ["Deteksi APD lengkap", "Alert real-time", "CCTV existing", "Laporan compliance"],
-    img: "/assets/products/safety.jpg",
-  },
-  {
-    code: "AT-03", name: "Attendance", icon: "user", color: "#10B981",
-    tagline: "Absensi face-recognition.",
-    desc: "Akurat, anti-titip absen, dan terhubung otomatis ke HRIS.",
-    features: ["Akurasi 98%+", "Geofencing & shift", "Sinkron HRIS", "Mobile / kiosk"],
-    img: "/assets/products/attendance.jpg",
-  },
-  {
-    code: "HR-04", name: "HRIS Sentra", icon: "building", color: "#2C5BB8",
-    tagline: "HR end-to-end.",
-    desc: "Cuti, payroll, performance, dokumen — satu sistem, mobile-first.",
-    features: ["Self-service", "Payroll & BPJS", "Approval workflow", "iOS & Android"],
-    img: "/assets/products/hris.jpg",
-  },
-  {
-    code: "FM-05", name: "Fleet", icon: "truck", color: "#F59E0B",
-    tagline: "Telematik armada.",
-    desc: "Tracking, konsumsi BBM, perilaku driver — dalam satu peta operasional.",
-    features: ["GPS + replay", "Sensor BBM ±2%", "Driver scoring", "Maintenance reminder"],
-    img: "/assets/products/fleet.jpg",
-  },
-  {
-    code: "AI-06", name: "sentrAI", icon: "ai", color: "#7C3AED",
-    tagline: "Private LLM on-prem.",
-    desc: "Asisten AI dilatih di atas dokumen internal, data tidak keluar jaringan.",
-    features: ["100% on-prem", "Indexing dokumen", "Audit per query", "Multi-tenant"],
-    img: "/assets/products/sentrai.jpg",
-  },
-  {
-    code: "WB-07", name: "Website", icon: "code", color: "#8B5CF6",
-    tagline: "Portal & web app custom.",
-    desc: "Website korporat, portal pemerintahan, dashboard analitik — dibangun dari nol.",
-    features: ["Design system custom", "CMS mudah dikelola", "SEO terukur", "Hosting & support"],
-    img: "/assets/products/website.jpg",
-  },
-  {
-    code: "IN-08", name: "Integrasi", icon: "cog", color: "#06B6D4",
-    tagline: "Menyatukan sistem lama.",
-    desc: "API, connector, dan SSO yang membuat data mengalir lintas platform.",
-    features: ["API custom", "Migrasi data aman", "Single sign-on", "Monitoring SLA"],
-    img: "/assets/products/integrasi.jpg",
-  },
-  {
-    code: "MT-09", name: "Sentra Meeting", icon: "cam", color: "#14B8A6",
-    tagline: "Video conference enterprise.",
-    desc: "Rapat HD dengan rekaman otomatis, transkripsi AI, dan integrasi langsung ke kalender perusahaan.",
-    features: ["HD video hingga 100 peserta", "Transkripsi AI Bahasa Indonesia", "Rekaman cloud + on-prem", "Integrasi kalender & HRIS"],
-  },
-  {
-    code: "IV-10", name: "Sentra Invoice", icon: "money", color: "#F97316",
-    tagline: "Invoicing & billing modern.",
-    desc: "Buat invoice profesional dalam hitungan detik — lengkap dengan pajak, pengiriman, dan tracking pembayaran.",
-    features: ["Template kustom & multi-mata uang", "PPN otomatis & e-Faktur ready", "Reminder pembayaran terjadwal", "Sinkron ke akuntansi & ERP"],
-  },
-  {
-    code: "KS-11", name: "Custom KIOSK", icon: "building", color: "#EC4899",
-    tagline: "Self-service kiosk untuk layanan publik.",
-    desc: "Mesin kiosk layar sentuh yang dirancang khusus untuk antrian, pendaftaran, pembayaran, dan layanan publik mandiri \u2014 lengkap dengan printer, scanner QR, dan integrasi e-KTP.",
-    features: ["Layar sentuh 21\u201932 inch HD", "Printer thermal & scanner e-KTP", "Software custom sesuai workflow", "Maintenance & after-sales lokal"],
-  },
+const PRODUCT_META = [
+  { code: "SL-01", name: "Smartlock",      icon: "lock",     color: "#0EA5E9", img: "/assets/products/smartlock.jpg" },
+  { code: "AI-02", name: "Safety AI",      icon: "shield",   color: "#EF4444", img: "/assets/products/safety.jpg" },
+  { code: "AT-03", name: "Attendance",     icon: "user",     color: "#10B981", img: "/assets/products/attendance.jpg" },
+  { code: "HR-04", name: "HRIS Sentra",    icon: "building", color: "#2C5BB8", img: "/assets/products/hris.jpg" },
+  { code: "FM-05", name: "Fleet",          icon: "truck",    color: "#F59E0B", img: "/assets/products/fleet.jpg" },
+  { code: "AI-06", name: "sentrAI",        icon: "ai",       color: "#7C3AED", img: "/assets/products/sentrai.jpg" },
+  { code: "WB-07", name: "Website",        icon: "code",     color: "#8B5CF6", img: "/assets/products/website.jpg" },
+  { code: "IN-08", name: "Integrasi",      icon: "cog",      color: "#06B6D4", img: "/assets/products/integrasi.jpg" },
+  { code: "MT-09", name: "Sentra Meeting", icon: "cam",      color: "#14B8A6" },
+  { code: "IV-10", name: "Sentra Invoice", icon: "money",    color: "#F97316" },
+  { code: "KS-11", name: "Custom KIOSK",   icon: "building", color: "#EC4899" },
 ];
 
 function ProductShowcase() {
+  const { t } = useLang();
+  const PRODUCTS = PRODUCT_META.map((m, i) => ({ ...m, ...t.products.items[i] }));
   const [active, setActive] = React.useState(0);
   const [paused, setPaused] = React.useState(false);
   const p = PRODUCTS[active];
@@ -102,9 +42,9 @@ function ProductShowcase() {
     <section id="produk">
       <div className="wrap">
         <SectionHead
-          label="Lini produk"
-          title="Sebelas produk yang saling terintegrasi."
-          lede="Pilih satu, atau gabungkan beberapa dalam satu platform terpadu — tanpa vendor lock-in."
+          label={t.products.label}
+          title={t.products.title}
+          lede={t.products.lede}
           right={{ num: "11", desc: "Product lines\nOne platform" }}
         />
 
@@ -144,7 +84,7 @@ function ProductShowcase() {
               </ul>
               <a href="#contact" className="product-link"
                  style={{ color: p.color, borderColor: p.color }}>
-                Minta demo <Icon.ne />
+                {t.products.demo} <Icon.ne />
               </a>
             </div>
 
@@ -212,19 +152,21 @@ function ProductVisual({ color, icon }) {
 
 /* PORTFOLIO with category filter — projects & imagery diambil dari company profile Sentra */
 function Portfolio() {
-  const projects = [
-    { year:"2025", cat:"IoT",      client:"Kontraktor Tambang · Kaltim",   title:"Fleet Management System — Telematik Armada Hauling", tags:["FMS","Telematics","CAN-Bus"], color:"#F59E0B", img:"/assets/projects/fms.jpg" },
-    { year:"2025", cat:"Software", client:"Diskominfosandi Kab. Barito Utara", title:"POMPy BATARA — Portal One Map & Dashboard Daerah",   tags:["Web","GIS","One Map"],        color:"#10B981", img:"/assets/projects/barito-dash.jpg" },
-    { year:"2024", cat:"Software", client:"Diskominfosandi Kab. Barito Utara", title:"Dashboard Geospasial DAPODIK — Pemetaan Sekolah",    tags:["GIS","Data Pendidikan"],      color:"#06B6D4", img:"/assets/projects/dapodik.jpg" },
-    { year:"2025", cat:"AI",       client:"Universitas Mulawarman",        title:"Smart Attendance — Absensi Face Recognition",        tags:["Face Reco","CCTV","Mobile"],  color:"#2C5BB8", img:"/assets/projects/attendance.jpg" },
-    { year:"2025", cat:"IoT",      client:"Fakultas Farmasi Universitas Mulawarman",        title:"Sentra Smartlock — Akses Digital Gedung Kampus",     tags:["IoT","Access Control"],       color:"#0EA5E9", img:"/assets/projects/smartlock.jpg" },
-    { year:"2025", cat:"AI",       client:"PT. Multi Harapan Utama",       title:"Deteksi Atribut Keselamatan (APD) Berbasis AI",      tags:["AI","Vision","K3"],           color:"#EF4444", img:"/assets/projects/safety.jpg" },
-    { year:"2024", cat:"Software", client:"Bukit Baiduri Energi",          title:"HRIS Sentra — Absensi, Payroll & Slip Gaji Mobile",  tags:["HRIS","Mobile","Payroll"],    color:"#7C3AED", img:"/assets/projects/hris.jpg" },
-    { year:"2024", cat:"Software", client:"Fakultas Ekonomi dan Bisnis Universitas Mulawarman",    title:"Website & Sistem Informasi Fakultas",                tags:["Web","CMS"],                  color:"#8B5CF6", img:"/assets/projects/feb-unmul.jpg" },
-    { year:"2023", cat:"Software", client:"Fakultas Farmasi Universitas Mulawarman",        title:"Website Resmi Fakultas Farmasi",                     tags:["Web","CMS"],                  color:"#14B8A6", img:"/assets/projects/farmasi.jpg" },
-    { year:"2024", cat:"AI",       client:"Intelligence Media Management", title:"Dashboard Media Monitoring & Analitik Isu",          tags:["NLP","Analytics"],            color:"#E11D48", img:"/assets/projects/imm.jpg" },
-    { year:"2025", cat:"AI",       client:"Platform Analitik Media Sosial", title:"Dashboard Analisis Sentimen & Social Listening",    tags:["NLP","Social Listening"],     color:"#475569", img:"/assets/projects/sentiment.jpg" },
+  const { t } = useLang();
+  const PROJ_META = [
+    { year:"2025", cat:"IoT",      client:t.portfolio.clientsAlt.mining,          tags:["FMS","Telematics","CAN-Bus"], color:"#F59E0B", img:"/assets/projects/fms.jpg" },
+    { year:"2025", cat:"Software", client:"Diskominfosandi Kab. Barito Utara",    tags:["Web","GIS","One Map"],        color:"#10B981", img:"/assets/projects/barito-dash.jpg" },
+    { year:"2024", cat:"Software", client:"Diskominfosandi Kab. Barito Utara",    tags:["GIS","DAPODIK"],              color:"#06B6D4", img:"/assets/projects/dapodik.jpg" },
+    { year:"2025", cat:"AI",       client:"Universitas Mulawarman",               tags:["Face Reco","CCTV","Mobile"],  color:"#2C5BB8", img:"/assets/projects/attendance.jpg" },
+    { year:"2025", cat:"IoT",      client:"Fakultas Farmasi Universitas Mulawarman", tags:["IoT","Access Control"],    color:"#0EA5E9", img:"/assets/projects/smartlock.jpg" },
+    { year:"2025", cat:"AI",       client:"PT. Multi Harapan Utama",              tags:["AI","Vision","K3"],           color:"#EF4444", img:"/assets/projects/safety.jpg" },
+    { year:"2024", cat:"Software", client:"Bukit Baiduri Energi",                 tags:["HRIS","Mobile","Payroll"],    color:"#7C3AED", img:"/assets/projects/hris.jpg" },
+    { year:"2024", cat:"Software", client:"Fakultas Ekonomi dan Bisnis Universitas Mulawarman", tags:["Web","CMS"],   color:"#8B5CF6", img:"/assets/projects/feb-unmul.jpg" },
+    { year:"2023", cat:"Software", client:"Fakultas Farmasi Universitas Mulawarman", tags:["Web","CMS"],               color:"#14B8A6", img:"/assets/projects/farmasi.jpg" },
+    { year:"2024", cat:"AI",       client:"Intelligence Media Management",        tags:["NLP","Analytics"],            color:"#E11D48", img:"/assets/projects/imm.jpg" },
+    { year:"2025", cat:"AI",       client:t.portfolio.clientsAlt.social,          tags:["NLP","Social Listening"],     color:"#475569", img:"/assets/projects/sentiment.jpg" },
   ];
+  const projects = PROJ_META.map((m, i) => ({ ...m, title: t.portfolio.titles[i] }));
   const cats = ["All", "IoT", "AI", "Software"];
   const [filter, setFilter] = React.useState("All");
   const filtered = filter === "All" ? projects : projects.filter(p => p.cat === filter);
@@ -233,10 +175,10 @@ function Portfolio() {
     <section id="portfolio">
       <div className="wrap">
         <SectionHead
-          label="Sudah berjalan di lapangan"
-          title="Solusi yang nyata bekerja."
-          lede="Sebelas dari 50+ proyek lintas industri sepanjang 2023–2025 — pemerintahan, pendidikan, dan industri."
-          right={{ num: "50+", desc: "Proyek terdeliver\n2019 – sekarang" }}
+          label={t.portfolio.label}
+          title={t.portfolio.title}
+          lede={t.portfolio.lede}
+          right={{ num: "50+", desc: t.portfolio.rightDesc }}
         />
 
         <div className="filter-pills reveal">
@@ -244,7 +186,7 @@ function Portfolio() {
             <button key={c}
                     className={`filter-pill ${filter === c ? "active" : ""}`}
                     onClick={() => setFilter(c)}>
-              {c}
+              {c === "All" ? t.portfolio.filterAll : c}
               {c !== "All" && (
                 <span style={{ marginLeft: 6, opacity: .6, fontSize: 11 }}>
                   {projects.filter(p => p.cat === c).length}

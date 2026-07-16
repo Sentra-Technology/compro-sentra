@@ -1,109 +1,32 @@
 "use client";
 
 import React from "react";
+import { useLang } from "./i18n";
 
 // Website — Client band: logo instansi asli + hover memunculkan detail proyek
 
 function ClientLogos() {
-  const clients = [
-    {
-      name: "Pemkot Samarinda",
-      sub: "Pemerintahan · Kaltim",
-      logo: "/assets/clients/samarinda.png",
-      preview: {
-        img: "/assets/clients/preview-city.jpg",
-        title: "Layanan Publik Digital & Smart City",
-        desc: "Custom KIOSK layanan mandiri dan konsultasi transformasi digital kota.",
-      },
-    },
-    {
-      name: "Diskominfosandi Kab. Barito Utara",
-      sub: "Pemerintahan · Kalteng",
-      logo: "/assets/clients/barut.png",
-      preview: {
-        img: "/assets/projects/barito-dash.jpg",
-        title: "POMPy BATARA & Dashboard Geospasial",
-        desc: "Portal One Map daerah dan pemetaan DAPODIK untuk pengambilan keputusan.",
-      },
-    },
-    {
-      name: "Universitas Mulawarman",
-      sub: "Pendidikan · Samarinda",
-      logo: "/assets/clients/unmul.png",
-      preview: {
-        img: "/assets/projects/attendance.jpg",
-        title: "Smart Attendance & Smartlock Kampus",
-        desc: "Absensi face recognition dan akses digital gedung fakultas.",
-      },
-    },
-    {
-      name: "Institut Teknologi Kalimantan",
-      sub: "Pendidikan · Balikpapan",
-      logo: "/assets/clients/itk.png",
-      preview: {
-        img: "/assets/team-photo.jpg",
-        title: "Kemitraan Akademik & Riset",
-        desc: "Kolaborasi riset terapan, magang, dan pengembangan talenta teknologi.",
-      },
-    },
-    {
-      name: "STT Migas Balikpapan",
-      sub: "Pendidikan · Balikpapan",
-      logo: "/assets/clients/sttmigas.png",
-      preview: {
-        img: "/assets/clients/preview-campus.jpg",
-        title: "Sistem Informasi Akademik",
-        desc: "Digitalisasi layanan kampus dan portal informasi akademik.",
-      },
-    },
-    {
-      name: "PT. Kideco Jaya Agung",
-      sub: "Mining · Kaltim",
-      mono: "KJ",
-      color: "#2C5BB8",
-      preview: {
-        img: "/assets/products/integrasi.jpg",
-        title: "CCTV & Network Infrastructure",
-        desc: "Rollout infrastruktur jaringan dan CCTV area operasional tambang.",
-      },
-    },
-    {
-      name: "PT. Adhi Karya",
-      sub: "Konstruksi · BUMN",
-      logo: "/assets/clients/adhi.png",
-      preview: {
-        img: "/assets/projects/safety.jpg",
-        title: "AI Safety Monitoring Proyek",
-        desc: "Deteksi APD otomatis berbasis computer vision di area konstruksi.",
-      },
-    },
-    {
-      name: "1Ci Enterprise",
-      sub: "Software · International",
-      mono: "1Ci",
-      color: "#F59E0B",
-      preview: {
-        img: "/assets/projects/integration.jpg",
-        title: "Integrasi Sistem Enterprise",
-        desc: "Konektor dan integrasi lintas platform untuk klien enterprise.",
-      },
-    },
-    {
-      name: "MBC Entertainment",
-      sub: "Media · International",
-      mono: "MBC",
-      color: "#8B5CF6",
-      preview: {
-        img: "/assets/projects/imm.jpg",
-        title: "Media Monitoring & Analitik Isu",
-        desc: "Dashboard intelijen media dengan analisis isu dan tokoh otomatis.",
-      },
-    },
+  const { t } = useLang();
+  const CLIENTS = [
+    { name: "Pemkot Samarinda", logo: "/assets/clients/samarinda.png", img: "/assets/clients/preview-city.jpg" },
+    { name: "Diskominfosandi Kab. Barito Utara", logo: "/assets/clients/barut.png", img: "/assets/projects/barito-dash.jpg" },
+    { name: "Universitas Mulawarman", logo: "/assets/clients/unmul.png", img: "/assets/projects/attendance.jpg" },
+    { name: "Institut Teknologi Kalimantan", logo: "/assets/clients/itk.png", img: "/assets/team-photo.jpg" },
+    { name: "STT Migas Balikpapan", logo: "/assets/clients/sttmigas.png", img: "/assets/clients/preview-campus.jpg" },
+    { name: "PT. Kideco Jaya Agung", logo: "/assets/clients/kideco.png", img: "/assets/products/integrasi.jpg" },
+    { name: "PT. Adhi Karya", logo: "/assets/clients/adhi.png", img: "/assets/projects/safety.jpg" },
+    { name: "1Ci Enterprise", mono: "1Ci", color: "#F59E0B", img: "/assets/projects/integration.jpg" },
+    { name: "MBC Entertainment", mono: "MBC", color: "#8B5CF6", img: "/assets/projects/imm.jpg" },
   ];
+  const clients = CLIENTS.map((c, i) => ({
+    ...c,
+    sub: t.clients.items[i].sub,
+    preview: { img: c.img, title: t.clients.items[i].pt, desc: t.clients.items[i].pd },
+  }));
   const loop = [...clients, ...clients];
   return (
     <section className="clients-band" id="trusted">
-      <div className="label">Dipercaya klien lintas industri di Indonesia & mancanegara</div>
+      <div className="label">{t.clients.label}</div>
       <div className="marquee-mask">
         <div className="marquee">
           {loop.map((c, i) => (

@@ -1,4 +1,5 @@
 import { RootEffects } from "@/components/RootEffects";
+import { LanguageProvider } from "@/components/i18n";
 import { Nav, Hero } from "@/components/web-nav-hero";
 import { ClientLogos } from "@/components/web-clients";
 import { About, Services } from "@/components/web-about-services";
@@ -11,7 +12,7 @@ import { WhatsAppWidget } from "@/components/web-whatsapp-widget";
 
 export default function HomePage() {
   return (
-    <>
+    <LanguageProvider>
       <RootEffects />
       <div id="top" />
       <div className="bg-orb a" />
@@ -35,6 +36,6 @@ export default function HomePage() {
       </main>
       <Footer />
       <WhatsAppWidget />
-    </>
+    </LanguageProvider>
   );
 }

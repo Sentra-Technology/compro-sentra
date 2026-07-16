@@ -2,57 +2,29 @@
 
 import React from "react";
 import { SectionHead } from "./web-about-services";
+import { useLang } from "./i18n";
 
 // Website — Partnership section with real brand logos (local assets) + float animations
 
 function Partnership() {
-  const partners = [
-    {
-      name: "TP-Link",
-      category: "Networking & Infrastructure",
-      desc: "Pemasok perangkat jaringan enterprise untuk implementasi konektivitas Sentra.",
-      color: "#4ACBD6",
-      logo: "/assets/partners/tplink.png",
-    },
-    {
-      name: "VIGI",
-      category: "AI Surveillance",
-      desc: "Kamera CCTV professional yang menjadi dasar lapisan AI vision Sentra.",
-      color: "#10B981",
-      logo: "/assets/partners/vigi.png",
-    },
-    {
-      name: "Teltonika",
-      category: "IoT Telematics",
-      desc: "Perangkat tracking dan gateway industrial berstandar Eropa untuk solusi fleet & remote monitoring.",
-      color: "#1B2F7E",
-      logo: "/assets/partners/teltonika.png",
-    },
-    {
-      name: "Lenovo",
-      category: "Enterprise Computing",
-      desc: "Server, workstation, dan perangkat enterprise untuk deployment on-premise.",
-      color: "#E2231A",
-      logo: "/assets/partners/lenovo.png",
-    },
-    {
-      name: "Institut Teknologi Kalimantan",
-      shortName: "ITK",
-      category: "Academic Partner",
-      desc: "Kolaborasi riset, magang, dan pengembangan talenta teknologi di Kalimantan.",
-      color: "#1D4ED8",
-      logo: "/assets/partners/itk.png",
-    },
+  const { t } = useLang();
+  const META = [
+    { name: "TP-Link", color: "#4ACBD6", logo: "/assets/partners/tplink.png" },
+    { name: "VIGI", color: "#10B981", logo: "/assets/partners/vigi.png" },
+    { name: "Teltonika", color: "#1B2F7E", logo: "/assets/partners/teltonika.png" },
+    { name: "Lenovo", color: "#E2231A", logo: "/assets/partners/lenovo.png" },
+    { name: "Institut Teknologi Kalimantan", shortName: "ITK", color: "#1D4ED8", logo: "/assets/partners/itk.png" },
   ];
+  const partners = META.map((m, i) => ({ ...m, ...t.partner.partners[i] }));
 
   return (
     <section id="partner" className="partnership">
       <div className="wrap">
         <SectionHead
-          label="Mitra teknologi"
-          title="Bekerja bersama nama-nama terbaik di industrinya."
-          lede="Kami berkolaborasi dengan mitra global dan institusi pendidikan untuk memastikan setiap solusi dibangun di atas fondasi yang teruji."
-          right={{ num: "05", desc: "Partner aktif\n2025" }}
+          label={t.partner.label}
+          title={t.partner.title}
+          lede={t.partner.lede}
+          right={{ num: "05", desc: t.partner.rightDesc }}
         />
 
         <div className="partner-grid">
@@ -78,7 +50,7 @@ function Partnership() {
 
         <div className="partner-strip reveal">
           <div className="partner-strip-label">
-            Bersama kami membangun ekosistem teknologi yang lebih kuat untuk Indonesia.
+            {t.partner.strip}
           </div>
         </div>
       </div>

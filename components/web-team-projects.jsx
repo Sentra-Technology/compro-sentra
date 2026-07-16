@@ -3,16 +3,15 @@
 import React from "react";
 import { Icon } from "./primitives";
 import { SectionHead } from "./web-about-services";
+import { useLang } from "./i18n";
 
 // Website — Team + FAQ
 
 function Team() {
-  const divisions = [
+  const { t } = useLang();
+  const DIV_META = [
     {
-      code: "DIV-01",
-      name: "Business",
-      tagline: "Client success, sales, delivery, dan after-sales.",
-      color: "#8FB1E8", icon: "building",
+      code: "DIV-01", name: "Business", color: "#8FB1E8", icon: "building",
       members: [
         { name: "Hendra Setiawan",   role: "Head of Business",     img: "hs", tag: "Lead" },
         { name: "Rina Kusuma",       role: "Project Manager",      img: "rk" },
@@ -21,10 +20,7 @@ function Team() {
       ],
     },
     {
-      code: "DIV-02",
-      name: "Hardware",
-      tagline: "IoT, instalasi lapangan, jaringan, dan perangkat fisik.",
-      color: "#2DD4BF", icon: "iot",
+      code: "DIV-02", name: "Hardware", color: "#2DD4BF", icon: "iot",
       members: [
         { name: "Rizky Maulana",     role: "Head of Hardware",      img: "rm", tag: "Lead" },
         { name: "Faisal Ramadhan",   role: "IoT & Embedded",         img: "fr" },
@@ -33,10 +29,7 @@ function Team() {
       ],
     },
     {
-      code: "DIV-03",
-      name: "Software",
-      tagline: "Web, mobile, AI, data engineering, dan integrasi sistem.",
-      color: "#4A8BFF", icon: "code",
+      code: "DIV-03", name: "Software", color: "#4A8BFF", icon: "code",
       members: [
         { name: "Andika Pratama",    role: "Head of Software",       img: "ap", tag: "Lead" },
         { name: "Dewi Larasati",     role: "AI / Computer Vision",   img: "dl" },
@@ -46,14 +39,16 @@ function Team() {
       ],
     },
   ];
+  const divisions = DIV_META.map((d, i) => ({ ...d, tagline: t.team.taglines[i] }));
+
   return (
     <section id="tim">
       <div className="wrap">
         <SectionHead
-          label="Tim kami"
-          title="Tiga divisi. Satu tim."
-          lede="13 ahli in-house — dibagi ke divisi Business, Hardware, dan Software, bekerja end-to-end pada setiap proyek."
-          right={{ num: "13", desc: "Anggota tim\n03 divisi · in-house" }}
+          label={t.team.label}
+          title={t.team.title}
+          lede={t.team.lede}
+          right={{ num: "13", desc: t.team.rightDesc }}
         />
 
         <div className="team-divisions">
@@ -65,6 +60,7 @@ function Team() {
 }
 
 function TeamBlock({ d }) {
+  const { t } = useLang();
   const Ic = Icon[d.icon] || Icon.cog;
   return (
     <div className="team-block reveal">
@@ -79,7 +75,7 @@ function TeamBlock({ d }) {
           <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
             <span className="code" style={{ color: d.color }}>{d.code}</span>
             <span style={{ width: 4, height: 4, borderRadius: "50%", background: "var(--line)" }}/>
-            <span className="kicker" style={{ fontSize: 10 }}>{d.members.length} ANGGOTA</span>
+            <span className="kicker" style={{ fontSize: 10 }}>{d.members.length} {t.team.member}</span>
           </div>
           <div className="name">{d.name}</div>
         </div>
@@ -111,40 +107,16 @@ function Member({ m, color }) {
 
 /* FAQ — accordion */
 function FAQ() {
-  const items = [
-    {
-      q: "Berapa lama proses implementasi tipikal?",
-      a: "Untuk pilot bisa dimulai dalam 2–4 minggu. Rollout penuh untuk solusi terintegrasi biasanya 2–6 bulan tergantung skala — kami mulai dengan pilot kecil yang terukur sebelum scale-up.",
-    },
-    {
-      q: "Apakah data klien aman dan bisa di-host on-premise?",
-      a: "Ya. Semua produk kami mendukung deployment on-premise atau private cloud. Untuk klien sektor pemerintah dan keuangan, kami biasanya merekomendasikan opsi on-prem dengan audit log lengkap.",
-    },
-    {
-      q: "Apakah Sentra bisa integrasi dengan sistem yang sudah kami pakai?",
-      a: "Ya, ini justru menjadi kekuatan kami. Tim integrasi kami terbiasa menyambungkan ERP lama, HRIS, CCTV, dan database lain ke platform Sentra melalui API atau connector custom.",
-    },
-    {
-      q: "Apakah kami harus berlangganan semua produk?",
-      a: "Tidak. Mulai dari satu produk yang paling mendesak (mis. Attendance atau Smartlock), lalu tambahkan sesuai kebutuhan operasi. Tidak ada vendor lock-in.",
-    },
-    {
-      q: "Bagaimana dukungan after-sales?",
-      a: "Tim support kami 100% in-house dan berbasis di Indonesia. Tersedia paket SLA dengan response time 1–4 jam tergantung tier, dan tim lapangan dapat hadir on-site untuk implementasi besar.",
-    },
-    {
-      q: "Apakah Sentra hanya melayani Kalimantan Timur?",
-      a: "Tidak. Kami berbasis di Samarinda, tapi proyek kami tersebar di berbagai provinsi. Implementasi dilakukan dengan kombinasi tim on-site dan remote.",
-    },
-  ];
+  const { t } = useLang();
+  const items = t.faq.items;
   const [open, setOpen] = React.useState(0);
   return (
     <section id="faq" className="tight">
       <div className="wrap">
         <SectionHead
           center
-          label="FAQ"
-          title="Pertanyaan yang sering diajukan."
+          label={t.faq.label}
+          title={t.faq.title}
         />
 
         <div className="faq-list reveal">

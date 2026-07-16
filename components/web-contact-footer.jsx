@@ -2,10 +2,13 @@
 
 import React from "react";
 import { Icon } from "./primitives";
+import { useLang } from "./i18n";
 
 // Website — Contact (form + info) + Footer
 
 function Contact() {
+  const { t } = useLang();
+  const c = t.contact;
   const [sent, setSent] = React.useState(false);
   const onSubmit = (e) => {
     e.preventDefault();
@@ -18,17 +21,15 @@ function Contact() {
         <div className="contact-card reveal">
           <div className="contact-grid">
             <div>
-              <p className="section-label contact-eyebrow">Get in touch</p>
-              <h2 className="h-display">Mari berkolaborasi.</h2>
-              <p className="lede">
-                Ceritakan tantangan operasional Anda — kami balas dalam 1×24 jam.
-              </p>
+              <p className="section-label contact-eyebrow">{c.eyebrow}</p>
+              <h2 className="h-display">{c.h}</h2>
+              <p className="lede">{c.lede}</p>
 
               <div className="contact-list">
                 {[
-                  ["phone", "TELEPON", "+62 822 5544 3380"],
-                  ["mail",  "EMAIL",   "admin@sentratechnology.com"],
-                  ["pin",   "KANTOR",  "Kompleks Graha Indah A.13\nSamarinda Kota, Kalimantan Timur"],
+                  ["phone", c.phone, "+62 822 5544 3380"],
+                  ["mail",  c.email, "admin@sentratechnology.com"],
+                  ["pin",   c.office, "Kompleks Graha Indah A.13\nSamarinda Kota, Kalimantan Timur"],
                 ].map(([ic, k, v]) => {
                   const Ic = Icon[ic];
                   return (
@@ -47,28 +48,28 @@ function Contact() {
             <form className="contact-form" onSubmit={onSubmit}>
               <div className="field-row">
                 <div className="field">
-                  <label>Nama</label>
-                  <input type="text" required placeholder="Nama lengkap"/>
+                  <label>{c.fName}</label>
+                  <input type="text" required placeholder={c.pName}/>
                 </div>
                 <div className="field">
-                  <label>Perusahaan</label>
-                  <input type="text" placeholder="Nama perusahaan"/>
+                  <label>{c.fCompany}</label>
+                  <input type="text" placeholder={c.pCompany}/>
                 </div>
               </div>
               <div className="field">
-                <label>Email</label>
-                <input type="email" required placeholder="email@perusahaan.com"/>
+                <label>{c.fEmail}</label>
+                <input type="email" required placeholder={c.pEmail}/>
               </div>
               <div className="field">
-                <label>Layanan yang diminati</label>
-                <input type="text" placeholder="Smartlock, AI Safety, HRIS, dll."/>
+                <label>{c.fService}</label>
+                <input type="text" placeholder={c.pService}/>
               </div>
               <div className="field">
-                <label>Pesan singkat</label>
-                <textarea required placeholder="Ceritakan kebutuhan singkat Anda…"></textarea>
+                <label>{c.fMsg}</label>
+                <textarea required placeholder={c.pMsg}></textarea>
               </div>
               <button type="submit" className="form-submit" disabled={sent}>
-                {sent ? <><Icon.check/> Terkirim — kami akan hubungi balik</> : <>Kirim pesan <Icon.arrow/></>}
+                {sent ? <><Icon.check/> {c.sent}</> : <>{c.submit} <Icon.arrow/></>}
               </button>
             </form>
           </div>
@@ -79,6 +80,8 @@ function Contact() {
 }
 
 function Footer() {
+  const { t } = useLang();
+  const f = t.footer;
   return (
     <footer className="footer">
       <div className="wrap">
@@ -86,10 +89,7 @@ function Footer() {
           <div>
             <img className="footer-logo" src="/assets/sentra-logo.png" alt="Sentra Technology"/>
             <p style={{ fontSize: 13.5, color: "var(--ink-2)", lineHeight: 1.6, margin: "0 0 16px", maxWidth: 320 }}>
-              PT. Sentra Visi Teknologi (Sentra Technology) — pusat teknologi
-              berbasis di Samarinda yang menghadirkan solusi AI, IoT, dan
-              pengembangan software untuk mendorong transformasi digital
-              pemerintahan, industri, pendidikan, dan korporasi di Indonesia.
+              {f.desc}
             </p>
             <div style={{ display: "flex", gap: 8 }}>
               {["globe", "mail", "phone"].map(ic => {
@@ -112,7 +112,7 @@ function Footer() {
           </div>
 
           <div>
-            <h5>Produk</h5>
+            <h5>{f.hProduct}</h5>
             <ul>
               <li><a href="#produk">Smartlock</a></li>
               <li><a href="#produk">Safety AI</a></li>
@@ -124,17 +124,17 @@ function Footer() {
           </div>
 
           <div>
-            <h5>Perusahaan</h5>
+            <h5>{f.hCompany}</h5>
             <ul>
-              <li><a href="#tentang">Tentang</a></li>
-              <li><a href="#tim">Tim</a></li>
-              <li><a href="#portfolio">Portfolio</a></li>
-              <li><a href="#faq">FAQ</a></li>
+              <li><a href="#tentang">{f.company[0]}</a></li>
+              <li><a href="#tim">{f.company[1]}</a></li>
+              <li><a href="#portfolio">{f.company[2]}</a></li>
+              <li><a href="#faq">{f.company[3]}</a></li>
             </ul>
           </div>
 
           <div>
-            <h5>Kontak</h5>
+            <h5>{f.hContact}</h5>
             <ul>
               <li><a href="tel:+6282255443380">+62 822 5544 3380</a></li>
               <li><a href="mailto:admin@sentratechnology.com">admin@sentratechnology.com</a></li>
@@ -147,8 +147,8 @@ function Footer() {
         </div>
 
         <div className="footer-bottom">
-          <span>© 2026 PT. Sentra Visi Teknologi · All rights reserved</span>
-          <span>Made in Samarinda · Indonesia</span>
+          <span>{f.rights}</span>
+          <span>{f.made}</span>
         </div>
       </div>
     </footer>
