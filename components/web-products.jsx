@@ -13,48 +13,56 @@ const PRODUCTS = [
     tagline: "Akses pintu pintar.",
     desc: "Kontrol akses ruangan dari satu dashboard, dengan audit trail lengkap.",
     features: ["Kartu, PIN, atau app", "Audit log real-time", "Integrasi HRIS", "Offline mode"],
+    img: "/assets/projects/smartlock-wide.jpg",
   },
   {
     code: "AI-02", name: "Safety AI", icon: "shield", color: "#EF4444",
     tagline: "Computer vision untuk K3.",
     desc: "Deteksi otomatis pelanggaran APD & area terlarang dari CCTV existing.",
     features: ["Deteksi APD lengkap", "Alert real-time", "CCTV existing", "Laporan compliance"],
+    img: "/assets/projects/safety.jpg",
   },
   {
     code: "AT-03", name: "Attendance", icon: "user", color: "#10B981",
     tagline: "Absensi face-recognition.",
     desc: "Akurat, anti-titip absen, dan terhubung otomatis ke HRIS.",
     features: ["Akurasi 98%+", "Geofencing & shift", "Sinkron HRIS", "Mobile / kiosk"],
+    img: "/assets/projects/attendance.jpg",
   },
   {
     code: "HR-04", name: "HRIS Sentra", icon: "building", color: "#2C5BB8",
     tagline: "HR end-to-end.",
     desc: "Cuti, payroll, performance, dokumen — satu sistem, mobile-first.",
     features: ["Self-service", "Payroll & BPJS", "Approval workflow", "iOS & Android"],
+    img: "/assets/projects/hris.jpg",
   },
   {
     code: "FM-05", name: "Fleet", icon: "truck", color: "#F59E0B",
     tagline: "Telematik armada.",
     desc: "Tracking, konsumsi BBM, perilaku driver — dalam satu peta operasional.",
     features: ["GPS + replay", "Sensor BBM ±2%", "Driver scoring", "Maintenance reminder"],
+    img: "/assets/projects/fms.jpg",
   },
   {
     code: "AI-06", name: "sentrAI", icon: "ai", color: "#7C3AED",
     tagline: "Private LLM on-prem.",
     desc: "Asisten AI dilatih di atas dokumen internal, data tidak keluar jaringan.",
     features: ["100% on-prem", "Indexing dokumen", "Audit per query", "Multi-tenant"],
+    img: "/assets/projects/sentrai.jpg",
   },
   {
     code: "WB-07", name: "Website", icon: "code", color: "#8B5CF6",
     tagline: "Portal & web app custom.",
     desc: "Website korporat, portal pemerintahan, dashboard analitik — dibangun dari nol.",
     features: ["Design system custom", "CMS mudah dikelola", "SEO terukur", "Hosting & support"],
+    img: "/assets/projects/feb-unmul.jpg",
   },
   {
     code: "IN-08", name: "Integrasi", icon: "cog", color: "#06B6D4",
     tagline: "Menyatukan sistem lama.",
     desc: "API, connector, dan SSO yang membuat data mengalir lintas platform.",
     features: ["API custom", "Migrasi data aman", "Single sign-on", "Monitoring SLA"],
+    img: "/assets/projects/integration.jpg", imgFit: "contain",
   },
   {
     code: "MT-09", name: "Sentra Meeting", icon: "cam", color: "#14B8A6",
@@ -143,7 +151,12 @@ function ProductShowcase() {
             <div className="pv" style={{ ["--pc"]: p.color }}>
               <div className="pv-rim"/>
               <span className="pv-badge">{p.code}</span>
-              <ProductPreview code={p.code}/>
+              {p.img ? (
+                <img className={`pv-photo${p.imgFit === "contain" ? " contain" : ""}`}
+                     src={p.img} alt={`Tampilan nyata ${p.name}`} loading="lazy"/>
+              ) : (
+                <ProductPreview code={p.code}/>
+              )}
               <div className="pv-particles">
                 {[0,1,2,3,4,5].map(i => <span key={i} className={`pv-spark s${i}`}/>)}
               </div>

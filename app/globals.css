@@ -1050,6 +1050,62 @@ section.micro { padding: 40px 0; }
   grid-template-columns: repeat(3, 1fr);
   gap: 16px;
 }
+/* Galeri dokumentasi nyata implementasi CCTV AI */
+.cctv-proof { margin-top: 40px; }
+.cctv-proof-head {
+  display: flex;
+  align-items: baseline;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 18px;
+}
+.cctv-proof-head h3 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0;
+}
+.cctv-proof-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+.cctv-shot {
+  position: relative;
+  margin: 0;
+  aspect-ratio: 4/3;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid var(--line-2);
+  background: var(--surface-2);
+}
+.cctv-shot img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .6s ease;
+}
+.cctv-shot:hover img { transform: scale(1.045); }
+.cctv-shot figcaption {
+  position: absolute;
+  inset: auto 0 0 0;
+  padding: 34px 16px 14px;
+  background: linear-gradient(180deg, rgba(10,15,26,0) 0%, rgba(10,15,26,0.82) 62%);
+  display: grid;
+  gap: 3px;
+}
+.cctv-shot figcaption strong {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 14px;
+  color: #fff;
+}
+.cctv-shot figcaption span {
+  font-size: 12px;
+  line-height: 1.45;
+  color: rgba(255,255,255,0.78);
+}
 .cctv-feat {
   position: relative;
   padding: 26px 24px;
@@ -1443,6 +1499,21 @@ section.micro { padding: 40px 0; }
   background: rgba(0,0,0,0.4);
   padding: 4px 8px;
   border-radius: 4px;
+}
+/* Foto produk nyata di panel showcase */
+.pv .pv-photo {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: inherit;
+  z-index: 1;
+}
+.pv .pv-photo.contain {
+  object-fit: contain;
+  background: #F2F6FC;
+  padding: 14px;
 }
 
 /* ---------- PORTFOLIO ---------- */
@@ -4300,6 +4371,7 @@ body.light .pp-meet .meet-frame { background: linear-gradient(160deg, #1F2937, #
   .cctv-hero { grid-template-columns: 1fr; gap: 36px; }
   .cctv-hero h2 { font-size: clamp(26px, 6vw, 36px); }
   .cctv-features { grid-template-columns: 1fr; gap: 12px; }
+  .cctv-proof-grid { grid-template-columns: 1fr; }
   .showcase { grid-template-columns: 1fr; padding: 18px; gap: 18px; }
   .tab-list { flex-direction: row; overflow-x: auto; padding-bottom: 6px; margin: 0 -8px; padding-left: 8px; padding-right: 8px; }
   .tab-list button { flex-shrink: 0; min-width: 180px; }

@@ -103,6 +103,41 @@ function CCTV() {
             );
           })}
         </div>
+
+        {/* Dokumentasi nyata dari implementasi di lapangan */}
+        <div className="cctv-proof reveal">
+          <div className="cctv-proof-head">
+            <p className="section-label">Bukti di lapangan</p>
+            <h3>Bukan konsep — sudah berjalan.</h3>
+          </div>
+          <div className="cctv-proof-grid">
+            {[
+              {
+                img: "/assets/projects/cctv-ppe.jpg", pos: "center top",
+                t: "Deteksi APD real-time",
+                d: "Helm, rompi, sabuk & sepatu safety terdeteksi otomatis dari CCTV.",
+              },
+              {
+                img: "/assets/projects/cctv-face.jpg", pos: "left center",
+                t: "Face recognition di stream CCTV",
+                d: "Identifikasi wajah langsung dari kamera existing, tanpa hardware baru.",
+              },
+              {
+                img: "/assets/projects/cctv-field.jpg", pos: "center",
+                t: "Dipasang tim sendiri",
+                d: "Survey, instalasi, hingga komisioning ditangani tim lapangan Sentra.",
+              },
+            ].map(s => (
+              <figure className="cctv-shot" key={s.t}>
+                <img src={s.img} alt={s.t} loading="lazy" style={{ objectPosition: s.pos }}/>
+                <figcaption>
+                  <strong>{s.t}</strong>
+                  <span>{s.d}</span>
+                </figcaption>
+              </figure>
+            ))}
+          </div>
+        </div>
       </div>
     </section>
   );
