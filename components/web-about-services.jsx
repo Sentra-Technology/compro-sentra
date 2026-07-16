@@ -83,10 +83,10 @@ function About() {
               <div className="ac-photo-overlay">
                 <div className="ac-photo-tag">
                   <span className="ac-photo-dot"/>
-                  Tim kami sedang bekerja
+                  Kolaborasi lintas divisi
                 </div>
                 <div className="ac-photo-caption">
-                  Samarinda · Kalimantan Timur
+                  Business · Hardware · Software
                 </div>
               </div>
             </div>

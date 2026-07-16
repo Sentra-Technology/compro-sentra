@@ -124,8 +124,8 @@ function CCTV() {
               },
               {
                 img: "/assets/projects/cctv-field.jpg", pos: "center",
-                t: "Dipasang tim sendiri",
-                d: "Survey, instalasi, hingga komisioning ditangani tim lapangan Sentra.",
+                t: "Berjalan di CCTV existing",
+                d: "Tanpa ganti kamera — lapisan AI Sentra dipasang di atas perangkat yang sudah ada.",
               },
             ].map(s => (
               <figure className="cctv-shot" key={s.t}>
