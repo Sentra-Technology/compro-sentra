@@ -9,11 +9,11 @@ import { useLang } from "./i18n";
 function Partnership() {
   const { t } = useLang();
   const META = [
-    { name: "TP-Link", color: "#4ACBD6", logo: "/assets/partners/tplink.png" },
-    { name: "VIGI", color: "#10B981", logo: "/assets/partners/vigi.png" },
-    { name: "Teltonika", color: "#1B2F7E", logo: "/assets/partners/teltonika.png" },
-    { name: "Lenovo", color: "#E2231A", logo: "/assets/partners/lenovo.png" },
-    { name: "Institut Teknologi Kalimantan", shortName: "ITK", color: "#1D4ED8", logo: "/assets/partners/itk.png" },
+    { name: "TP-Link", color: "#4ACBD6", logo: "/assets/partners/tplink-v2.png" },
+    { name: "VIGI", color: "#10B981", logo: "/assets/partners/vigi-v2.png" },
+    { name: "Teltonika", color: "#1B2F7E", logo: "/assets/partners/teltonika-v2.png" },
+    { name: "Lenovo", color: "#E2231A", logo: "/assets/partners/lenovo-v2.png" },
+    { name: "Institut Teknologi Kalimantan", shortName: "ITK", color: "#1D4ED8", logo: "/assets/partners/itk-v2.png" },
   ];
   const partners = META.map((m, i) => ({ ...m, ...t.partner.partners[i] }));
 

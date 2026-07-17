@@ -11,7 +11,7 @@ import { useLang } from "./i18n";
 const PRODUCT_META = [
   { code: "SL-01", name: "Smartlock",      icon: "lock",     color: "#0EA5E9", img: "/assets/products/smartlock.jpg" },
   { code: "AI-02", name: "Safety AI",      icon: "shield",   color: "#EF4444", img: "/assets/products/safety.jpg" },
-  { code: "AT-03", name: "Attendance",     icon: "user",     color: "#10B981", img: "/assets/products/attendance.jpg" },
+  { code: "AT-03", name: "Attendance",     icon: "user",     color: "#10B981", img: "/assets/products/attendance-v2.jpg" },
   { code: "HR-04", name: "HRIS Sentra",    icon: "building", color: "#2C5BB8", img: "/assets/products/hris.jpg" },
   { code: "FM-05", name: "Fleet",          icon: "truck",    color: "#F59E0B", img: "/assets/products/fleet.jpg" },
   { code: "AI-06", name: "sentrAI",        icon: "ai",       color: "#7C3AED", img: "/assets/products/sentrai.jpg" },

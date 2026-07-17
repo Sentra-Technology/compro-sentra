@@ -8,13 +8,13 @@ import { useLang } from "./i18n";
 function ClientLogos() {
   const { t } = useLang();
   const CLIENTS = [
-    { name: "Pemkot Samarinda", logo: "/assets/clients/samarinda.png", img: "/assets/clients/preview-city.jpg" },
-    { name: "Diskominfosandi Kab. Barito Utara", logo: "/assets/clients/barut.png", img: "/assets/projects/barito-dash.jpg" },
-    { name: "Universitas Mulawarman", logo: "/assets/clients/unmul.png", img: "/assets/projects/attendance.jpg" },
-    { name: "Institut Teknologi Kalimantan", logo: "/assets/clients/itk.png", img: "/assets/team-photo.jpg" },
-    { name: "STT Migas Balikpapan", logo: "/assets/clients/sttmigas.png", img: "/assets/clients/preview-campus.jpg" },
-    { name: "PT. Kideco Jaya Agung", logo: "/assets/clients/kideco.png", img: "/assets/products/integrasi.jpg" },
-    { name: "PT. Adhi Karya", logo: "/assets/clients/adhi.png", img: "/assets/projects/safety.jpg" },
+    { name: "Pemkot Samarinda", logo: "/assets/clients/samarinda-v2.png", img: "/assets/clients/preview-samarinda.jpg" },
+    { name: "Diskominfosandi Kab. Barito Utara", logo: "/assets/clients/barut-v2.png", img: "/assets/projects/barito-dash.jpg" },
+    { name: "Universitas Mulawarman", logo: "/assets/clients/unmul-v2.png", img: "/assets/projects/attendance.jpg" },
+    { name: "Institut Teknologi Kalimantan", logo: "/assets/clients/itk-v2.png", img: "/assets/team-photo-v2.jpg" },
+    { name: "STT Migas Balikpapan", logo: "/assets/clients/sttmigas-v2.png", img: "/assets/clients/preview-campus.jpg" },
+    { name: "PT. Kideco Jaya Agung", logo: "/assets/clients/kideco-v2.png", img: "/assets/products/integrasi.jpg" },
+    { name: "PT. Adhi Karya", logo: "/assets/clients/adhi-v2.png", img: "/assets/projects/safety.jpg" },
     { name: "1Ci Enterprise", mono: "1Ci", color: "#F59E0B", img: "/assets/projects/integration.jpg" },
     { name: "MBC Entertainment", mono: "MBC", color: "#8B5CF6", img: "/assets/projects/imm.jpg" },
   ];

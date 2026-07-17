@@ -17,7 +17,7 @@ function CCTV() {
     { ic: "bell",    anim: "notify",   color: "#10B981" },
   ];
   const features = META.map((m, i) => ({ ...m, ...t.cctv.features[i] }));
-  const PROOF_IMGS = ["gal-ppe", "gal-existing", "gal-monitor", "gal-mobile", "gal-traffic", "gal-dashboard"];
+  const PROOF_IMGS = ["gal-ppe", "gal-existing", "gal-monitor-v2", "gal-mobile", "gal-traffic", "gal-dashboard"];
   const proof = PROOF_IMGS.map((img, i) => ({ img: `/assets/cctv/${img}.jpg`, ...t.cctv.proof[i] }));
 
   return (
@@ -47,7 +47,7 @@ function CCTV() {
           </div>
 
           <div className="cctv-frame cctv-photo">
-            <img src="/assets/cctv/hero.jpg" alt="Jaringan kamera CCTV — lapisan AI Sentra"/>
+            <img src="/assets/cctv/hero-v2.jpg" alt="Jaringan kamera CCTV — lapisan AI Sentra"/>
             <span className="cctv-photo-label">CAM-GRID · AI LAYER AKTIF</span>
             <span className="cctv-photo-rec"><span className="dot"/>REC</span>
           </div>

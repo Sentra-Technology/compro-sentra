@@ -89,7 +89,7 @@ function About() {
 
           <div className="ac-side reveal-right">
             <div className="ac-photo">
-              <img src="/assets/team-photo.jpg" alt={a.photoTag}/>
+              <img src="/assets/team-photo-v2.jpg" alt={a.photoTag}/>
               <div className="ac-photo-overlay">
                 <div className="ac-photo-tag">
                   <span className="ac-photo-dot"/>
@@ -189,7 +189,7 @@ function Timeline() {
     year,
     t: a.timeline[i].t,
     d: a.timeline[i].d,
-    img: `/assets/timeline/${year}.jpg`,
+    img: `/assets/timeline/${year}-v2.jpg`,
   }));
   const [hover, setHover] = React.useState(null);
 
