@@ -154,22 +154,23 @@ function ProductVisual({ color, icon }) {
 function Portfolio() {
   const { t } = useLang();
   const PROJ_META = [
-    { year:"2025", cat:"IoT",      client:t.portfolio.clientsAlt.mining,          tags:["FMS","Telematics","CAN-Bus"], color:"#F59E0B", img:"/assets/projects/fms.jpg" },
-    { year:"2025", cat:"Software", client:"Diskominfosandi Kab. Barito Utara",    tags:["Web","GIS","One Map"],        color:"#10B981", img:"/assets/projects/barito-dash.jpg" },
+    { year:"2025", cat:"IoT",      client:t.portfolio.clientsAlt.mining,          tags:["FMS","Telematics","CAN-Bus"], color:"#F59E0B", img:"/assets/projects/fms.jpg", url:"https://fms.sentratechnology.com" },
+    { year:"2025", cat:"Software", client:"Diskominfosandi Kab. Barito Utara",    tags:["Web","GIS","One Map"],        color:"#10B981", img:"/assets/projects/barito-dash.jpg", url:"https://pompy.baritoutarakab.go.id" },
     { year:"2024", cat:"Software", client:"Diskominfosandi Kab. Barito Utara",    tags:["GIS","DAPODIK"],              color:"#06B6D4", img:"/assets/projects/dapodik.jpg" },
     { year:"2025", cat:"AI",       client:"Universitas Mulawarman",               tags:["Face Reco","CCTV","Mobile"],  color:"#2C5BB8", img:"/assets/projects/attendance.jpg" },
     { year:"2025", cat:"IoT",      client:"Fakultas Farmasi Universitas Mulawarman", tags:["IoT","Access Control"],    color:"#0EA5E9", img:"/assets/projects/smartlock.jpg" },
     { year:"2025", cat:"AI",       client:"PT. Multi Harapan Utama",              tags:["AI","Vision","K3"],           color:"#EF4444", img:"/assets/projects/safety.jpg" },
     { year:"2024", cat:"Software", client:"Bukit Baiduri Energi",                 tags:["HRIS","Mobile","Payroll"],    color:"#7C3AED", img:"/assets/projects/hris.jpg" },
-    { year:"2024", cat:"Software", client:"Fakultas Ekonomi dan Bisnis Universitas Mulawarman", tags:["Web","CMS"],   color:"#8B5CF6", img:"/assets/projects/feb-unmul.jpg" },
-    { year:"2023", cat:"Software", client:"Fakultas Farmasi Universitas Mulawarman", tags:["Web","CMS"],               color:"#14B8A6", img:"/assets/projects/farmasi.jpg" },
+    { year:"2024", cat:"Software", client:"Fakultas Ekonomi dan Bisnis Universitas Mulawarman", tags:["Web","CMS"],   color:"#8B5CF6", img:"/assets/projects/feb-unmul.jpg", url:"https://feb.unmul.ac.id" },
+    { year:"2023", cat:"Software", client:"Fakultas Farmasi Universitas Mulawarman", tags:["Web","CMS"],               color:"#14B8A6", img:"/assets/projects/farmasi.jpg", url:"https://ff.unmul.ac.id" },
     { year:"2024", cat:"AI",       client:"Intelligence Media Management",        tags:["NLP","Analytics"],            color:"#E11D48", img:"/assets/projects/imm.jpg" },
     { year:"2025", cat:"AI",       client:t.portfolio.clientsAlt.social,          tags:["NLP","Social Listening"],     color:"#475569", img:"/assets/projects/sentiment.jpg" },
-    { year:"2025", cat:"AI",       client:t.portfolio.clientsAlt.meeting,         tags:["ASR","NLP","On-Prem"],        color:"#14B8A6", img:"/assets/projects/meeting.jpg" },
+    { year:"2025", cat:"AI",       client:t.portfolio.clientsAlt.meeting,         tags:["ASR","NLP","On-Prem"],        color:"#14B8A6", img:"/assets/projects/meeting.jpg", url:"https://meet.sentratechnology.com" },
     { year:"2024", cat:"Software", client:t.portfolio.clientsAlt.clinic,          tags:["Web","Queue","EMR"],          color:"#22C55E", img:"/assets/projects/clinic.jpg" },
-    { year:"2023", cat:"Software", client:t.portfolio.clientsAlt.coop,            tags:["Web","Finance","Mobile"],     color:"#F97316", img:"/assets/projects/koperasi.jpg" },
+    { year:"2023", cat:"Software", client:t.portfolio.clientsAlt.coop,            tags:["Web","Finance","Mobile"],     color:"#F97316", img:"/assets/projects/koperasi.jpg", url:"https://lentera.sentratechnology.com" },
     { year:"2025", cat:"IoT",      client:t.portfolio.clientsAlt.agri,            tags:["Sensor","LoRa","Weather"],    color:"#84CC16", img:"/assets/projects/agri.jpg" },
     { year:"2024", cat:"AI",       client:t.portfolio.clientsAlt.logistics,       tags:["Route AI","GPS","Fleet"],     color:"#6366F1", img:"/assets/projects/logistik.jpg" },
+    { year:"2025", cat:"IoT",      client:"Fakultas Farmasi Universitas Mulawarman", tags:["CCTV AI","VIGI","50+ Unit"], color:"#0891B2", img:"/assets/projects/cctv-farmasi.jpg" },
   ];
   const projects = PROJ_META.map((m, i) => ({ ...m, title: t.portfolio.titles[i] }));
   const cats = ["All", "IoT", "AI", "Software"];
@@ -215,6 +216,14 @@ function Portfolio() {
                 <div className="tags">
                   {p.tags.map(t => <span className="tag" key={t}>{t}</span>)}
                 </div>
+                {p.url && (
+                  <a className="proj-visit" href={p.url} target="_blank" rel="noopener noreferrer">
+                    {p.url.replace("https://", "")}
+                    <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4">
+                      <path d="M7 17 17 7M9 7h8v8"/>
+                    </svg>
+                  </a>
+                )}
               </div>
             </div>
           ))}

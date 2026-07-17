@@ -11,31 +11,30 @@ function Team() {
   const { t } = useLang();
   const DIV_META = [
     {
-      code: "DIV-01", name: "Business", color: "#8FB1E8", icon: "building",
+      code: "DIV-01", name: "Leadership", color: "#8FB1E8", icon: "building",
       members: [
-        { name: "Hendra Setiawan",   role: "Head of Business",     img: "hs", tag: "Lead" },
-        { name: "Rina Kusuma",       role: "Project Manager",      img: "rk" },
-        { name: "Galang Pradipta",   role: "Business Development", img: "gp" },
-        { name: "Sari Widyaningsih", role: "Client Success",       img: "sw" },
+        { name: "Muhammad Nabil Akbar Pratama", role: "Chief Executive Officer", img: "nabil",     tag: "CEO" },
+        { name: "Richard Chandra Tjiang",       role: "Chief Operating Officer", img: "richard-c", tag: "COO" },
       ],
     },
     {
       code: "DIV-02", name: "Hardware", color: "#2DD4BF", icon: "iot",
       members: [
-        { name: "Rizky Maulana",     role: "Head of Hardware",      img: "rm", tag: "Lead" },
-        { name: "Faisal Ramadhan",   role: "IoT & Embedded",         img: "fr" },
-        { name: "Tomi Hidayat",      role: "Field & Support",        img: "th" },
-        { name: "Bagas Wicaksono",   role: "Network & Infra",        img: "bw" },
+        { name: "Adam Naufal Ashalhuda",   role: "Hardware Lead",   img: "adam", tag: "Lead" },
+        { name: "Paul Vincent Mendrov",    role: "Network & Infra", img: "paul" },
+        { name: "Zikri Maulana",           role: "Network & Infra", img: "zikri" },
+        { name: "Khrisna Dhika Sonjaya",   role: "Field Support",   img: "khrisna" },
+        { name: "Ridhwan Cahyo Kuncoro",   role: "Field Support",   img: "ridhwan" },
       ],
     },
     {
       code: "DIV-03", name: "Software", color: "#4A8BFF", icon: "code",
       members: [
-        { name: "Andika Pratama",    role: "Head of Software",       img: "ap", tag: "Lead" },
-        { name: "Dewi Larasati",     role: "AI / Computer Vision",   img: "dl" },
-        { name: "Nadya Hartono",     role: "Mobile Engineer",        img: "nh" },
-        { name: "Putri Anggraini",   role: "QA & Integration",       img: "pa" },
-        { name: "Arya Ramadhan",     role: "Full-Stack Engineer",    img: "ar" },
+        { name: "Richard Owen Hoan",                 role: "Software Lead",      img: "richard-o", tag: "Lead" },
+        { name: "Ahmad Rusdianto Andarina Syakbani", role: "AI Engineer",        img: "ahmad" },
+        { name: "Muhamad Ilham",                     role: "UI & UX Designer",   img: "ilham" },
+        { name: "Rudy Rachman",                      role: "Mobile Engineer",    img: "rudy" },
+        { name: "Jihan Apriliani Nurhasanah",        role: "Fullstack Engineer", img: "jihan" },
       ],
     },
   ];
@@ -48,7 +47,7 @@ function Team() {
           label={t.team.label}
           title={t.team.title}
           lede={t.team.lede}
-          right={{ num: "13", desc: t.team.rightDesc }}
+          right={{ num: "12", desc: t.team.rightDesc }}
         />
 
         <div className="team-divisions">
@@ -82,7 +81,9 @@ function TeamBlock({ d }) {
         <div className="tagline">{d.tagline}</div>
       </div>
 
-      <div className="team-grid" style={{ gridTemplateColumns: `repeat(${d.members.length === 5 ? 5 : 4}, 1fr)` }}>
+      <div className="team-grid" style={ d.members.length === 2
+        ? { gridTemplateColumns: "repeat(2, minmax(0, 300px))", justifyContent: "center" }
+        : { gridTemplateColumns: `repeat(${d.members.length === 5 ? 5 : 4}, 1fr)` } }>
         {d.members.map(m => <Member key={m.img} m={m} color={d.color} />)}
       </div>
     </div>

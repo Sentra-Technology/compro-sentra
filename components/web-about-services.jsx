@@ -68,7 +68,7 @@ function About() {
 
             {/* Statistik ringkas — memadatkan kolom naratif */}
             <div className="ac-mini-stats">
-              {["6+", "50+", "13", "11"].map((v, i) => (
+              {["6+", "50+", "12", "11"].map((v, i) => (
                 <div className="ac-mini-stat" key={i}>
                   <div className="v">{v}</div>
                   <div className="k">{a.stats[i]}</div>
@@ -96,7 +96,7 @@ function About() {
                   {a.photoTag}
                 </div>
                 <div className="ac-photo-caption">
-                  Business · Hardware · Software
+                  Leadership · Hardware · Software
                 </div>
               </div>
             </div>
