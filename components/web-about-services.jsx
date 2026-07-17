@@ -231,7 +231,16 @@ function Timeline() {
 
 function Services() {
   const { t } = useLang();
-  const ics = ["cam", "iot", "ai", "cloud", "code", "building", "data", "cog"];
+  const META = [
+    { ic: "cam",      chips: ["Object Detection", "ANPR", "Heatmap"] },
+    { ic: "iot",      chips: ["Sensor", "Gateway", "4G/LoRa"] },
+    { ic: "ai",       chips: ["YOLO", "Face Reco", "OCR"] },
+    { ic: "cloud",    chips: ["RAG", "On-Prem", "Multi-tenant"] },
+    { ic: "code",     chips: ["Web", "Mobile", "API"] },
+    { ic: "building", chips: ["REST API", "SSO", "ETL"] },
+    { ic: "data",     chips: ["Dashboard", "BI", "Real-time"] },
+    { ic: "cog",      chips: ["IT Audit", "Roadmap", "Training"] },
+  ];
   return (
     <section id="solusi">
       <div className="wrap">
@@ -244,12 +253,22 @@ function Services() {
 
         <div className="svc-grid">
           {t.services.tiles.map((s, i) => {
-            const Ic = Icon[ics[i]];
+            const Ic = Icon[META[i].ic];
             return (
               <div className="svc-tile reveal" key={i} style={{ transitionDelay: `${(i % 4) * 80}ms` }}>
                 <div className="ic"><Ic/></div>
                 <h4>{s.t}</h4>
                 <p>{s.d}</p>
+                {/* Detail muncul saat hover — pola sama dengan kartu fitur CCTV */}
+                <div className="svc-detail">
+                  <div className="svc-detail-inner">
+                    <p>{t.services.details[i]}</p>
+                    <div className="svc-chips">
+                      {META[i].chips.map(c => <span key={c}>{c}</span>)}
+                    </div>
+                  </div>
+                </div>
+                <div className="svc-hint">{t.cctv.hint}</div>
               </div>
             );
           })}

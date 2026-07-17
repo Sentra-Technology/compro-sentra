@@ -165,6 +165,11 @@ function Portfolio() {
     { year:"2023", cat:"Software", client:"Fakultas Farmasi Universitas Mulawarman", tags:["Web","CMS"],               color:"#14B8A6", img:"/assets/projects/farmasi.jpg" },
     { year:"2024", cat:"AI",       client:"Intelligence Media Management",        tags:["NLP","Analytics"],            color:"#E11D48", img:"/assets/projects/imm.jpg" },
     { year:"2025", cat:"AI",       client:t.portfolio.clientsAlt.social,          tags:["NLP","Social Listening"],     color:"#475569", img:"/assets/projects/sentiment.jpg" },
+    { year:"2025", cat:"AI",       client:t.portfolio.clientsAlt.meeting,         tags:["ASR","NLP","On-Prem"],        color:"#14B8A6", img:"/assets/projects/meeting.jpg" },
+    { year:"2024", cat:"Software", client:t.portfolio.clientsAlt.clinic,          tags:["Web","Queue","EMR"],          color:"#22C55E", img:"/assets/projects/clinic.jpg" },
+    { year:"2023", cat:"Software", client:t.portfolio.clientsAlt.coop,            tags:["Web","Finance","Mobile"],     color:"#F97316", img:"/assets/projects/koperasi.jpg" },
+    { year:"2025", cat:"IoT",      client:t.portfolio.clientsAlt.agri,            tags:["Sensor","LoRa","Weather"],    color:"#84CC16", img:"/assets/projects/agri.jpg" },
+    { year:"2024", cat:"AI",       client:t.portfolio.clientsAlt.logistics,       tags:["Route AI","GPS","Fleet"],     color:"#6366F1", img:"/assets/projects/logistik.jpg" },
   ];
   const projects = PROJ_META.map((m, i) => ({ ...m, title: t.portfolio.titles[i] }));
   const cats = ["All", "IoT", "AI", "Software"];

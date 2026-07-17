@@ -954,6 +954,59 @@ section.micro { padding: 40px 0; }
 }
 .svc-tile:hover { transform: translateY(-3px); border-color: var(--gold); }
 .svc-tile:hover::before { opacity: 1; }
+/* Detail layanan — meluncur turun saat hover (pola kartu fitur CCTV),
+   grid 0fr->1fr agar tinggi menyesuaikan panjang teks tiap bahasa */
+.svc-detail {
+  display: grid;
+  grid-template-rows: 0fr;
+  opacity: 0;
+  margin-top: auto;
+  transition: grid-template-rows .45s cubic-bezier(.2,.7,.2,1), opacity .35s;
+}
+.svc-tile:hover .svc-detail {
+  grid-template-rows: 1fr;
+  opacity: 1;
+}
+.svc-detail-inner { min-height: 0; overflow: hidden; }
+.svc-detail-inner p {
+  font-size: 12.5px;
+  line-height: 1.55;
+  color: var(--ink-2);
+  margin: 0 0 10px;
+  padding-top: 12px;
+  border-top: 1px dashed var(--line-2);
+}
+.svc-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding-bottom: 2px;
+}
+.svc-chips span {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 9.5px;
+  letter-spacing: .06em;
+  color: var(--accent);
+  background: var(--gold-soft);
+  border: 1px solid var(--line-2);
+  border-radius: 999px;
+  padding: 4px 9px;
+  white-space: nowrap;
+}
+.svc-hint {
+  position: absolute;
+  bottom: 12px;
+  right: 16px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 8.5px;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--muted);
+  opacity: .7;
+  transition: opacity .25s;
+  pointer-events: none;
+}
+.svc-tile:hover .svc-hint { opacity: 0; }
 .svc-tile .ic {
   width: 38px; height: 38px;
   border-radius: 10px;

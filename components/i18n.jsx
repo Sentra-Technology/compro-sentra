@@ -100,6 +100,16 @@ const ID = {
     title: "Kapabilitas full-stack, satu tim terpadu.",
     lede: "Dari hardware sampai LLM private — semua di-deliver oleh tim in-house yang sama.",
     rightDesc: "Produk\n3 divisi",
+    details: [
+      "Deteksi objek, heatmap area, dan alert otomatis — dipasang di atas kamera yang sudah ada, hasil terlihat sejak minggu pertama.",
+      "Survey lokasi, desain perangkat, instalasi, hingga maintenance berkala — satu pintu untuk seluruh siklus hardware.",
+      "Model dilatih ulang dengan data lapangan Indonesia — akurat di kondisi cahaya, cuaca, dan APD lokal.",
+      "Chatbot pengetahuan internal dengan kontrol akses per divisi — data tidak pernah keluar dari server Anda.",
+      "Dari riset UX, pengembangan, hingga pelatihan pengguna dan hosting — siklus penuh oleh satu tim.",
+      "Data mengalir otomatis antar aplikasi — tanpa entri ganda, tanpa mengganti sistem yang sudah berjalan.",
+      "Semua metrik operasional dalam satu dashboard real-time — dari lapangan sampai ruang direksi.",
+      "Assessment infrastruktur, roadmap 3–5 tahun, dan pendampingan eksekusi transformasi digital.",
+    ],
     tiles: [
       { t: "CCTV Analytics", d: "AI di atas CCTV existing — flagship Sentra." },
       { t: "IoT & Hardware", d: "Smartlock, telematics, sensor jaringan." },
@@ -147,7 +157,7 @@ const ID = {
   portfolio: {
     label: "Sudah berjalan di lapangan",
     title: "Solusi yang nyata bekerja.",
-    lede: "Sebelas dari 50+ proyek lintas industri sepanjang 2023–2025 — pemerintahan, pendidikan, dan industri.",
+    lede: "Enam belas dari 50+ proyek lintas industri sepanjang 2023–2025 — pemerintahan, pendidikan, kesehatan, dan industri.",
     rightDesc: "Proyek terdeliver\n2019 – sekarang",
     filterAll: "Semua",
     titles: [
@@ -162,8 +172,13 @@ const ID = {
       "Website Resmi Fakultas Farmasi",
       "Dashboard Media Monitoring & Analitik Isu",
       "Dashboard Analisis Sentimen & Social Listening",
+      "Sentra Meeting — Transkripsi Rapat Bahasa Indonesia",
+      "Sistem Antrian & Pendaftaran Poliklinik",
+      "Digitalisasi Layanan Simpan Pinjam",
+      "IoT Monitoring Cuaca & Kelembapan Lahan",
+      "Optimasi Rute & Monitoring Armada Distribusi",
     ],
-    clientsAlt: { mining: "Kontraktor Tambang · Kaltim", social: "Platform Analitik Media Sosial" },
+    clientsAlt: { mining: "Kontraktor Tambang · Kaltim", social: "Platform Analitik Media Sosial", meeting: "Korporasi & Kampus · Kaltim", clinic: "Klinik & RS Swasta · Samarinda", coop: "BPR & Koperasi · Kaltim", agri: "Perkebunan Sawit · Kaltim", logistics: "Operator Logistik · Balikpapan" },
   },
   team: {
     label: "Tim kami",
@@ -187,6 +202,7 @@ const ID = {
       { q: "Apakah kami harus berlangganan semua produk?", a: "Tidak. Mulai dari satu produk yang paling mendesak (mis. Attendance atau Smartlock), lalu tambahkan sesuai kebutuhan operasi. Tidak ada vendor lock-in." },
       { q: "Bagaimana dukungan after-sales?", a: "Tim support kami 100% in-house dan berbasis di Indonesia. Tersedia paket SLA dengan response time 1–4 jam tergantung tier, dan tim lapangan dapat hadir on-site untuk implementasi besar." },
       { q: "Apakah Sentra hanya melayani Kalimantan Timur?", a: "Tidak. Kami berbasis di Samarinda, tapi proyek kami tersebar di berbagai provinsi. Implementasi dilakukan dengan kombinasi tim on-site dan remote." },
+      { q: "Apakah Sentra melayani klien internasional (worldwide)?", a: "Ya, Sentra melayani klien secara worldwide. Kami telah menangani proyek untuk klien internasional seperti 1Ci Enterprise dan MBC Entertainment. Implementasi lintas negara dijalankan secara remote-first dengan komunikasi dalam Bahasa Inggris, dan kunjungan on-site dapat diatur sesuai kebutuhan proyek." },
     ],
   },
   contact: {
@@ -303,6 +319,16 @@ const EN = {
     title: "Full-stack capability, one integrated team.",
     lede: "From hardware to private LLMs — all delivered by the same in-house team.",
     rightDesc: "Products\n3 divisions",
+    details: [
+      "Object detection, area heatmaps, and automatic alerts — deployed on your existing cameras, with results visible from week one.",
+      "Site survey, device design, installation, and scheduled maintenance — one door for the whole hardware lifecycle.",
+      "Models retrained on Indonesian field data — accurate across local lighting, weather, and PPE conditions.",
+      "An internal knowledge chatbot with per-division access control — data never leaves your servers.",
+      "From UX research and development to user training and hosting — the full cycle by one team.",
+      "Data flows automatically between applications — no double entry, no replacing systems that already work.",
+      "Every operational metric in one real-time dashboard — from the field to the boardroom.",
+      "Infrastructure assessment, a 3–5 year roadmap, and hands-on guidance through your digital transformation.",
+    ],
     tiles: [
       { t: "CCTV Analytics", d: "AI on top of existing CCTV — Sentra's flagship." },
       { t: "IoT & Hardware", d: "Smartlocks, telematics, network sensors." },
@@ -350,7 +376,7 @@ const EN = {
   portfolio: {
     label: "Running in the field",
     title: "Solutions that truly work.",
-    lede: "Eleven of 50+ cross-industry projects from 2023–2025 — government, education, and industry.",
+    lede: "Sixteen of 50+ cross-industry projects from 2023–2025 — government, education, healthcare, and industry.",
     rightDesc: "Projects delivered\n2019 – present",
     filterAll: "All",
     titles: [
@@ -365,8 +391,13 @@ const EN = {
       "Official Faculty of Pharmacy Website",
       "Media Monitoring & Issue Analytics Dashboard",
       "Sentiment Analysis & Social Listening Dashboard",
+      "Sentra Meeting — Indonesian Meeting Transcription",
+      "Polyclinic Queue & Registration System",
+      "Savings & Loan Service Digitalization",
+      "IoT Weather & Soil Moisture Monitoring",
+      "Route Optimization & Distribution Fleet Monitoring",
     ],
-    clientsAlt: { mining: "Mining Contractor · East Kalimantan", social: "Social Media Analytics Platform" },
+    clientsAlt: { mining: "Mining Contractor · East Kalimantan", social: "Social Media Analytics Platform", meeting: "Enterprises & Campuses · East Kalimantan", clinic: "Private Clinics & Hospitals · Samarinda", coop: "Rural Banks & Cooperatives · East Kalimantan", agri: "Palm Oil Plantation · East Kalimantan", logistics: "Logistics Operator · Balikpapan" },
   },
   team: {
     label: "Our team",
@@ -390,6 +421,7 @@ const EN = {
       { q: "Do we have to subscribe to all products?", a: "No. Start with the most urgent product (e.g. Attendance or Smartlock), then add as your operations require. There is no vendor lock-in." },
       { q: "What about after-sales support?", a: "Our support team is 100% in-house and based in Indonesia. SLA packages offer 1–4 hour response times depending on tier, and field teams can come on-site for major implementations." },
       { q: "Does Sentra only serve East Kalimantan?", a: "No. We are based in Samarinda, but our projects span multiple provinces. Implementation combines on-site and remote teams." },
+      { q: "Does Sentra serve international clients (worldwide)?", a: "Yes, Sentra serves clients worldwide. We have delivered projects for international clients such as 1Ci Enterprise and MBC Entertainment. Cross-border implementations run remote-first with English-speaking communication, and on-site visits can be arranged as the project requires." },
     ],
   },
   contact: {
@@ -506,6 +538,16 @@ const ZH = {
     title: "全栈能力，一个整合团队。",
     lede: "从硬件到私有大语言模型 — 全部由同一支内部团队交付。",
     rightDesc: "产品\n3 个部门",
+    details: [
+      "目标检测、区域热力图与自动警报 — 部署在现有摄像头上，第一周即可见效。",
+      "现场勘查、设备设计、安装与定期维护 — 硬件全生命周期一站式服务。",
+      "模型基于印尼实地数据再训练 — 适应本地光照、天气与劳保环境。",
+      "内部知识问答机器人，按部门控制访问权限 — 数据绝不离开您的服务器。",
+      "从用户体验调研、开发到用户培训与托管 — 全流程由同一团队完成。",
+      "数据在应用之间自动流转 — 无需重复录入，也无需更换现有系统。",
+      "所有运营指标汇聚于一个实时仪表盘 — 从现场直达决策层。",
+      "基础设施评估、3–5 年路线图，以及数字化转型全程陪伴。",
+    ],
     tiles: [
       { t: "CCTV 智能分析", d: "现有监控之上的 AI — Sentra 旗舰。" },
       { t: "物联网与硬件", d: "智能门锁、车联网、网络传感器。" },
@@ -553,7 +595,7 @@ const ZH = {
   portfolio: {
     label: "已在实地运行",
     title: "真正有效的解决方案。",
-    lede: "2023–2025 年 50+ 跨行业项目中的十一个 — 覆盖政府、教育与工业。",
+    lede: "2023–2025 年 50+ 跨行业项目中的十六个 — 覆盖政府、教育、医疗与工业。",
     rightDesc: "已交付项目\n2019 – 至今",
     filterAll: "全部",
     titles: [
@@ -568,8 +610,13 @@ const ZH = {
       "药学院官方网站",
       "媒体监测与舆情分析仪表盘",
       "情感分析与社交聆听仪表盘",
+      "Sentra Meeting — 印尼语会议转写",
+      "门诊排队与挂号系统",
+      "储蓄贷款服务数字化",
+      "物联网气象与土壤湿度监测",
+      "配送路线优化与车队监控",
     ],
-    clientsAlt: { mining: "矿业承包商 · 东加里曼丹", social: "社交媒体分析平台" },
+    clientsAlt: { mining: "矿业承包商 · 东加里曼丹", social: "社交媒体分析平台", meeting: "企业与高校 · 东加里曼丹", clinic: "私立诊所与医院 · 三马林达", coop: "农村银行与合作社 · 东加里曼丹", agri: "棕榈种植园 · 东加里曼丹", logistics: "物流运营商 · 巴厘巴板" },
   },
   team: {
     label: "我们的团队",
@@ -593,6 +640,7 @@ const ZH = {
       { q: "我们必须订阅所有产品吗？", a: "不必。从最紧迫的产品开始（如考勤或智能门锁），再按运营需求逐步增加。没有供应商锁定。" },
       { q: "售后支持如何？", a: "支持团队 100% 为印尼本土自有团队。SLA 套餐按等级提供 1–4 小时响应，大型实施项目可安排现场支持。" },
       { q: "Sentra 只服务东加里曼丹吗？", a: "不是。我们总部位于三马林达，但项目遍布多个省份，采用现场与远程团队相结合的方式实施。" },
+      { q: "Sentra 是否服务国际客户（全球范围）？", a: "是的，Sentra 面向全球提供服务。我们已为 1Ci Enterprise、MBC Entertainment 等国际客户交付项目。跨国实施以远程优先方式进行，支持英文沟通，并可根据项目需要安排现场支持。" },
     ],
   },
   contact: {
@@ -709,6 +757,16 @@ const KO = {
     title: "풀스택 역량, 하나의 통합 팀.",
     lede: "하드웨어부터 프라이빗 LLM까지 — 모두 같은 사내 팀이 제공합니다.",
     rightDesc: "제품\n3개 부서",
+    details: [
+      "객체 감지, 히트맵, 자동 알림 — 기존 카메라 위에 배포되어 첫 주부터 성과가 보입니다.",
+      "현장 조사, 기기 설계, 설치, 정기 유지보수까지 — 하드웨어 전 주기를 한 곳에서.",
+      "인도네시아 현장 데이터로 재학습한 모델 — 현지 조명·날씨·보호구 환경에서도 정확합니다.",
+      "부서별 접근 제어를 갖춘 사내 지식 챗봇 — 데이터는 서버 밖으로 나가지 않습니다.",
+      "UX 리서치와 개발부터 사용자 교육, 호스팅까지 — 한 팀이 전체 사이클을 담당합니다.",
+      "애플리케이션 간 데이터 자동 연동 — 이중 입력 없이, 기존 시스템 교체 없이.",
+      "모든 운영 지표를 하나의 실시간 대시보드로 — 현장에서 경영진까지.",
+      "인프라 진단, 3–5년 로드맵, 디지털 전환 실행 동행까지.",
+    ],
     tiles: [
       { t: "CCTV 애널리틱스", d: "기존 CCTV 위의 AI — Sentra의 플래그십." },
       { t: "IoT & 하드웨어", d: "스마트락, 텔레매틱스, 네트워크 센서." },
@@ -756,7 +814,7 @@ const KO = {
   portfolio: {
     label: "현장에서 가동 중",
     title: "실제로 작동하는 솔루션.",
-    lede: "2023–2025년 50+ 프로젝트 중 11개 — 정부, 교육, 산업 전반.",
+    lede: "2023–2025년 50+ 프로젝트 중 16개 — 정부, 교육, 의료, 산업 전반.",
     rightDesc: "완료 프로젝트\n2019 – 현재",
     filterAll: "전체",
     titles: [
@@ -771,8 +829,13 @@ const KO = {
       "약학대학 공식 웹사이트",
       "미디어 모니터링 & 이슈 분석 대시보드",
       "감성 분석 & 소셜 리스닝 대시보드",
+      "Sentra Meeting — 인도네시아어 회의 전사",
+      "외래 대기·접수 시스템",
+      "저축·대출 서비스 디지털화",
+      "IoT 기상·토양 수분 모니터링",
+      "배송 경로 최적화 & 차량 모니터링",
     ],
-    clientsAlt: { mining: "광산 시공사 · 동칼리만탄", social: "소셜미디어 분석 플랫폼" },
+    clientsAlt: { mining: "광산 시공사 · 동칼리만탄", social: "소셜미디어 분석 플랫폼", meeting: "기업 & 캠퍼스 · 동칼리만탄", clinic: "민간 클리닉 & 병원 · 사마린다", coop: "지역은행 & 협동조합 · 동칼리만탄", agri: "팜오일 농장 · 동칼리만탄", logistics: "물류 사업자 · 발릭파판" },
   },
   team: {
     label: "우리 팀",
@@ -796,6 +859,7 @@ const KO = {
       { q: "모든 제품을 구독해야 하나요?", a: "아니요. 가장 시급한 제품(예: 출결 또는 스마트락)부터 시작해 필요에 따라 추가하세요. 벤더 종속이 없습니다." },
       { q: "사후 지원은 어떻게 되나요?", a: "지원팀은 100% 인도네시아 사내 인력입니다. 등급에 따라 1–4시간 응답의 SLA 패키지를 제공하며, 대규모 구축에는 현장 지원도 가능합니다." },
       { q: "동칼리만탄만 서비스하나요?", a: "아니요. 본사는 사마린다에 있지만 프로젝트는 여러 주에 걸쳐 있으며, 현장 팀과 원격 팀을 결합해 수행합니다." },
+      { q: "Sentra는 해외(전 세계) 고객도 지원하나요?", a: "네, Sentra는 전 세계 고객을 지원합니다. 1Ci Enterprise, MBC Entertainment 등 해외 고객 프로젝트를 수행해 왔습니다. 국가 간 구축은 원격 우선으로 진행되며 영어 소통을 지원하고, 필요 시 현장 방문도 조율할 수 있습니다." },
     ],
   },
   contact: {
@@ -912,6 +976,16 @@ const MS = {
     title: "Keupayaan full-stack, satu pasukan bersepadu.",
     lede: "Daripada perkakasan hingga LLM peribadi — semuanya disampaikan oleh pasukan dalaman yang sama.",
     rightDesc: "Produk\n3 bahagian",
+    details: [
+      "Pengesanan objek, heatmap kawasan, dan amaran automatik — dipasang pada kamera sedia ada, hasil kelihatan sejak minggu pertama.",
+      "Tinjauan tapak, reka bentuk peranti, pemasangan, hingga penyelenggaraan berkala — satu pintu untuk seluruh kitaran perkakasan.",
+      "Model dilatih semula dengan data lapangan Indonesia — tepat dalam keadaan cahaya, cuaca, dan PPE tempatan.",
+      "Chatbot pengetahuan dalaman dengan kawalan akses setiap bahagian — data tidak pernah keluar dari pelayan anda.",
+      "Daripada kajian UX, pembangunan, hingga latihan pengguna dan pengehosan — kitaran penuh oleh satu pasukan.",
+      "Data mengalir automatik antara aplikasi — tanpa kemasukan berganda, tanpa menggantikan sistem sedia ada.",
+      "Semua metrik operasi dalam satu papan pemuka masa nyata — dari lapangan hingga bilik lembaga.",
+      "Penilaian infrastruktur, pelan hala tuju 3–5 tahun, dan pendampingan pelaksanaan transformasi digital.",
+    ],
     tiles: [
       { t: "CCTV Analytics", d: "AI di atas CCTV sedia ada — flagship Sentra." },
       { t: "IoT & Perkakasan", d: "Smartlock, telematik, penderia rangkaian." },
@@ -959,7 +1033,7 @@ const MS = {
   portfolio: {
     label: "Sudah berjalan di lapangan",
     title: "Penyelesaian yang benar-benar berfungsi.",
-    lede: "Sebelas daripada 50+ projek pelbagai industri sepanjang 2023–2025 — kerajaan, pendidikan, dan industri.",
+    lede: "Enam belas daripada 50+ projek pelbagai industri sepanjang 2023–2025 — kerajaan, pendidikan, kesihatan, dan industri.",
     rightDesc: "Projek disiapkan\n2019 – kini",
     filterAll: "Semua",
     titles: [
@@ -974,8 +1048,13 @@ const MS = {
       "Laman Web Rasmi Fakulti Farmasi",
       "Papan Pemuka Pemantauan Media & Analitik Isu",
       "Papan Pemuka Analisis Sentimen & Social Listening",
+      "Sentra Meeting — Transkripsi Mesyuarat Bahasa Indonesia",
+      "Sistem Giliran & Pendaftaran Poliklinik",
+      "Pendigitalan Perkhidmatan Simpan Pinjam",
+      "Pemantauan IoT Cuaca & Kelembapan Tanah",
+      "Pengoptimuman Laluan & Pemantauan Armada Pengedaran",
     ],
-    clientsAlt: { mining: "Kontraktor Lombong · Kaltim", social: "Platform Analitik Media Sosial" },
+    clientsAlt: { mining: "Kontraktor Lombong · Kaltim", social: "Platform Analitik Media Sosial", meeting: "Korporat & Kampus · Kaltim", clinic: "Klinik & Hospital Swasta · Samarinda", coop: "BPR & Koperasi · Kaltim", agri: "Ladang Sawit · Kaltim", logistics: "Operator Logistik · Balikpapan" },
   },
   team: {
     label: "Pasukan kami",
@@ -999,6 +1078,7 @@ const MS = {
       { q: "Adakah kami perlu melanggan semua produk?", a: "Tidak. Mulakan dengan produk yang paling mendesak (cth. Attendance atau Smartlock), kemudian tambah mengikut keperluan operasi. Tiada vendor lock-in." },
       { q: "Bagaimana sokongan selepas jualan?", a: "Pasukan sokongan kami 100% dalaman dan berpangkalan di Indonesia. Pakej SLA dengan masa respons 1–4 jam mengikut tahap, dan pasukan lapangan boleh hadir di tapak untuk pelaksanaan besar." },
       { q: "Adakah Sentra hanya melayani Kalimantan Timur?", a: "Tidak. Kami berpangkalan di Samarinda, tetapi projek kami tersebar di pelbagai wilayah. Pelaksanaan dilakukan dengan gabungan pasukan di tapak dan jarak jauh." },
+      { q: "Adakah Sentra melayani klien antarabangsa (seluruh dunia)?", a: "Ya, Sentra melayani klien di seluruh dunia. Kami telah menyampaikan projek untuk klien antarabangsa seperti 1Ci Enterprise dan MBC Entertainment. Pelaksanaan rentas negara dijalankan secara remote-first dengan komunikasi dalam Bahasa Inggeris, dan lawatan ke tapak boleh diatur mengikut keperluan projek." },
     ],
   },
   contact: {
