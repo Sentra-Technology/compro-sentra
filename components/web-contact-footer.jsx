@@ -148,7 +148,6 @@ function Footer() {
 
         <div className="footer-bottom">
           <span>{f.rights}</span>
-          <span>{f.made}</span>
         </div>
       </div>
     </footer>

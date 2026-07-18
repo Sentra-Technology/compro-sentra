@@ -223,7 +223,6 @@ const ID = {
     hProduct: "Produk", hCompany: "Perusahaan", hContact: "Kontak",
     company: ["Tentang", "Tim", "Portfolio", "FAQ"],
     rights: "© 2026 PT. Sentra Visi Teknologi · Hak cipta dilindungi",
-    made: "Dibuat di Samarinda · Indonesia",
   },
 };
 
@@ -443,7 +442,6 @@ const EN = {
     hProduct: "Products", hCompany: "Company", hContact: "Contact",
     company: ["About", "Team", "Portfolio", "FAQ"],
     rights: "© 2026 PT. Sentra Visi Teknologi · All rights reserved",
-    made: "Made in Samarinda · Indonesia",
   },
 };
 
@@ -663,7 +661,6 @@ const ZH = {
     hProduct: "产品", hCompany: "公司", hContact: "联系方式",
     company: ["关于我们", "团队", "项目案例", "常见问题"],
     rights: "© 2026 PT. Sentra Visi Teknologi · 版权所有",
-    made: "印度尼西亚 · 三马林达制造",
   },
 };
 
@@ -883,7 +880,6 @@ const KO = {
     hProduct: "제품", hCompany: "회사", hContact: "연락처",
     company: ["소개", "팀", "포트폴리오", "FAQ"],
     rights: "© 2026 PT. Sentra Visi Teknologi · All rights reserved",
-    made: "Made in Samarinda · Indonesia",
   },
 };
 
@@ -1103,7 +1099,6 @@ const MS = {
     hProduct: "Produk", hCompany: "Syarikat", hContact: "Hubungi",
     company: ["Tentang", "Pasukan", "Portfolio", "Soalan Lazim"],
     rights: "© 2026 PT. Sentra Visi Teknologi · Hak cipta terpelihara",
-    made: "Dibina di Samarinda · Indonesia",
   },
 };
 
