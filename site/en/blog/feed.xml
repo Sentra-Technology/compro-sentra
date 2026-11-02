@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
+<channel>
+<title>Sentra Technology Articles</title>
+<link>https://www.sentratechnology.com/en/blog</link>
+<description>Guides from the Sentra team on CCTV analytics, face attendance, PPE detection, private LLMs, and digitizing operations.</description>
+<language>en</language>
+<lastBuildDate>Mon, 02 Nov 2026 08:00:00 +0700</lastBuildDate>
+<atom:link href="https://www.sentratechnology.com/en/blog/feed.xml" rel="self" type="application/rss+xml"/>
+<item>
+<title>Website Security Checklist: 12 Checks Before You Get Hacked</title>
+<link>https://www.sentratechnology.com/en/blog/keamanan-website-checklist</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/en/blog/keamanan-website-checklist</guid>
+<pubDate>Mon, 02 Nov 2026 08:00:00 +0700</pubDate>
+<description>A 12-point website security checklist for offices, schools and agencies: updates, passwords, backups, accounts, signs of online-gambling injection, and what to do once hit.</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/blog-keamanan-website.webp" medium="image"/>
+</item>
+<item>
+<title>Vehicle GPS Tracker for Company Fleets: Features, Cost Components and Driver Privacy</title>
+<link>https://www.sentratechnology.com/en/blog/gps-tracker-kendaraan-kantor</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/en/blog/gps-tracker-kendaraan-kantor</guid>
+<pubDate>Mon, 02 Nov 2026 08:00:00 +0700</pubDate>
+<description>What to consider before fitting GPS trackers to operational vehicles: features, installation, SIM, platform, cost components and driver privacy rules.</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/blog-gps-kendaraan.webp" medium="image"/>
+</item>
+<item>
+<title>Solar vs Diesel Light Towers for Mines and Projects: Which Fits</title>
+<link>https://www.sentratechnology.com/en/blog/light-tower-surya-vs-diesel</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/en/blog/light-tower-surya-vs-diesel</guid>
+<pubDate>Mon, 02 Nov 2026 08:00:00 +0700</pubDate>
+<description>Solar, hybrid and diesel light towers compared for mines and projects: running cost, maintenance, noise, weather, durability, safety and how to choose.</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/blog-light-tower.webp" medium="image"/>
+</item>
+<item>
+<title>Public Service Kiosks for Public Service Malls (MPP)</title>
+<link>https://www.sentratechnology.com/en/blog/kiosk-pelayanan-publik-mpp</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/en/blog/kiosk-pelayanan-publik-mpp</guid>
+<pubDate>Mon, 02 Nov 2026 08:00:00 +0700</pubDate>
+<description>What to prepare for queue and information kiosks in a Public Service Mall or service office: functions, hardware, queue flow, accessibility and maintenance.</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/blog-kiosk-mpp.webp" medium="image"/>
+</item>
+<item>
+<title>On-Premise Video Conferencing: A Zoom Alternative for Confidential Meetings</title>
+<link>https://www.sentratechnology.com/en/blog/video-conference-on-premise</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/en/blog/video-conference-on-premise</guid>
+<pubDate>Mon, 02 Nov 2026 08:00:00 +0700</pubDate>
+<description>When a company or agency should run video conferencing on its own servers, what network and equipment it needs, and what you accept compared with public services.</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/blog-meeting-onprem.webp" medium="image"/>
+</item>
+<item>
+<title>On-Premise AI Server: GPU, RAM and Storage You Need</title>
+<link>https://www.sentratechnology.com/en/blog/server-ai-on-premise</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/en/blog/server-ai-on-premise</guid>
+<pubDate>Mon, 02 Nov 2026 08:00:00 +0700</pubDate>
+<description>How to estimate GPU, VRAM, RAM and storage needs for running a language model on your own server, with a simple formula and example model sizes.</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/blog-server-ai.webp" medium="image"/>
+</item>
+<item>
+<title>Office Smart Locks: Door Access by Card, PIN, Face and Phone</title>
+<link>https://www.sentratechnology.com/en/blog/smartlock-kantor</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/en/blog/smartlock-kantor</guid>
+<pubDate>Mon, 02 Nov 2026 08:00:00 +0700</pubDate>
+<description>How to choose smart locks and door access control for an office: access methods, logs, backup power, fire evacuation safety, and integration with attendance.</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/blog-smartlock-kantor.webp" medium="image"/>
+</item>
+<item>
+<title>Office Laptop Specifications 2026 for Admin, Design and Field Work</title>
+<link>https://www.sentratechnology.com/en/blog/spesifikasi-laptop-kantor-2026</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/en/blog/spesifikasi-laptop-kantor-2026</guid>
+<pubDate>Mon, 02 Nov 2026 08:00:00 +0700</pubDate>
+<description>A guide to choosing office laptop specs by role: processor, RAM, storage, screen, battery, durability and warranty, without chasing numbers you do not need.</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/blog-laptop-kantor.webp" medium="image"/>
+</item>
+<item>
+<title>Office Data Backup: The 3-2-1 Rule in Practice</title>
+<link>https://www.sentratechnology.com/en/blog/backup-data-kantor-321</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/en/blog/backup-data-kantor-321</guid>
+<pubDate>Mon, 02 Nov 2026 08:00:00 +0700</pubDate>
+<description>How to apply the 3-2-1 backup rule in a small to mid-size office: what to back up, where to store it, how often, and how to test recovery.</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/blog-backup-321.webp" medium="image"/>
+</item>
+<item>
+<title>IP vs Analog CCTV: Which Suits Your Building</title>
+<link>https://www.sentratechnology.com/en/blog/cctv-ip-vs-analog</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/en/blog/cctv-ip-vs-analog</guid>
+<pubDate>Mon, 02 Nov 2026 08:00:00 +0700</pubDate>
+<description>IP and analog (AHD/TVI/CVI) CCTV compared on image, cabling, PoE, storage, AI analytics and cost, and when each makes sense.</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/blog-ip-vs-analog.webp" medium="image"/>
+</item>
+<item>
+<title>Hospital and Clinic Queue Systems: Kiosks, Displays and HIS Integration</title>
+<link>https://www.sentratechnology.com/en/blog/sistem-antrian-rumah-sakit</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/en/blog/sistem-antrian-rumah-sakit</guid>
+<pubDate>Mon, 02 Nov 2026 08:00:00 +0700</pubDate>
+<description>What to prepare for a queue system in a hospital, clinic or outpatient department: patient flow, kiosks, call displays, hospital information system integration and waiting-time data.</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/blog-antrian-rs.webp" medium="image"/>
+</item>
+<item>
+<title>ChatGPT for Business: Data Risks and On-Premise Alternatives</title>
+<link>https://www.sentratechnology.com/en/blog/chatgpt-untuk-perusahaan</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/en/blog/chatgpt-untuk-perusahaan</guid>
+<pubDate>Mon, 02 Nov 2026 08:00:00 +0700</pubDate>
+<description>What to check before staff use ChatGPT or other public AI for office documents, and when an on-premise model or private LLM makes more sense.</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/blog-chatgpt-perusahaan.webp" medium="image"/>
+</item>
+<item>
+<title>CCTV Packages for Shops and Small Businesses: How Many Cameras Are Enough</title>
+<link>https://www.sentratechnology.com/en/blog/paket-cctv-toko-umkm</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/en/blog/paket-cctv-toko-umkm</guid>
+<pubDate>Mon, 02 Nov 2026 08:00:00 +0700</pubDate>
+<description>How to decide the number and position of CCTV cameras for a shop, stall or small warehouse, what a package should include, and what people often miss.</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/blog-cctv-toko.webp" medium="image"/>
+</item>
+<item>
+<title>Building Fibre Optic Installation: Stages, Tools and Cost Components</title>
+<link>https://www.sentratechnology.com/en/blog/instalasi-fiber-optik-gedung</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/en/blog/instalasi-fiber-optik-gedung</guid>
+<pubDate>Mon, 02 Nov 2026 08:00:00 +0700</pubDate>
+<description>Stages of installing fibre optic in a building or campus: route survey, single-mode vs multimode, splicing, termination, OTDR testing, and cost components.</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/blog-fiber-gedung.webp" medium="image"/>
+</item>
+<item>
+<title>Android App vs Web App for Field Teams</title>
+<link>https://www.sentratechnology.com/en/blog/aplikasi-android-vs-web</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/en/blog/aplikasi-android-vs-web</guid>
+<pubDate>Mon, 02 Nov 2026 08:00:00 +0700</pubDate>
+<description>When field teams should use a native Android app and when a web app is enough: signal, GPS, camera, offline, hardware, updates and maintenance cost.</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/blog-android-vs-web.webp" medium="image"/>
+</item>
+<item>
+<title>AI for Local Government: A Document Assistant Where Data Stays In-House</title>
+<link>https://www.sentratechnology.com/en/blog/ai-untuk-pemerintah-daerah</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/en/blog/ai-untuk-pemerintah-daerah</guid>
+<pubDate>Mon, 02 Nov 2026 08:00:00 +0700</pubDate>
+<description>Realistic AI uses for local government: regulation Q&amp;A, meeting summaries and archive search, with the conditions of data control, source references and human review.</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/blog-ai-pemda.webp" medium="image"/>
+</item>
+<item>
+<title>What Is SPBE and What Local Governments Need to Prepare</title>
+<link>https://www.sentratechnology.com/en/blog/spbe-pemda-persiapan</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/en/blog/spbe-pemda-persiapan</guid>
+<pubDate>Sat, 31 Oct 2026 08:00:00 +0700</pubDate>
+<description>An explanation of SPBE (Indonesia&#x27;s electronic-based government system) for local governments: the legal basis, what is assessed, a preparation checklist, and common mistakes.</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/blog-spbe.webp" medium="image"/>
+</item>
+<item>
+<title>WebGIS and Thematic Maps for Local Governments: Lessons from POMPy BATARA in Barito Utara</title>
+<link>https://www.sentratechnology.com/en/blog/webgis-peta-tematik-pemda</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/en/blog/webgis-peta-tematik-pemda</guid>
+<pubDate>Sat, 31 Oct 2026 08:00:00 +0700</pubDate>
+<description>How local governments build WebGIS and thematic maps: common data layers, the steps, frequent mistakes, with the POMPy BATARA example from Barito Utara Regency.</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/blog-webgis.webp" medium="image"/>
+</item>
+<item>
+<title>Regional One Data: Steps to Build a Dashboard for Leaders</title>
+<link>https://www.sentratechnology.com/en/blog/satu-data-daerah-dashboard</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/en/blog/satu-data-daerah-dashboard</guid>
+<pubDate>Sat, 31 Oct 2026 08:00:00 +0700</pubDate>
+<description>Steps for local governments building Regional One Data and a leadership dashboard: data inventory, data owners, metadata, a portal, updates, and personal data protection.</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/blog-satu-data.webp" medium="image"/>
+</item>
+<item>
+<title>CCTV for Mining Areas: Cameras, Network, Power, and Remote Monitoring</title>
+<link>https://www.sentratechnology.com/en/blog/cctv-area-tambang</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/en/blog/cctv-area-tambang</guid>
+<pubDate>Sat, 31 Oct 2026 08:00:00 +0700</pubDate>
+<description>A guide to CCTV for mine sites: dust and rain resistant cameras, cable or radio networks, power, recording storage, and remote monitoring over satellite.</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/blog-cctv-tambang.webp" medium="image"/>
+</item>
+<item>
+<title>Starlink vs VSAT vs Fiber for Branch Offices and Sites in Kalimantan</title>
+<link>https://www.sentratechnology.com/en/blog/starlink-vs-vsat-vs-fiber</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/en/blog/starlink-vs-vsat-vs-fiber</guid>
+<pubDate>Fri, 30 Oct 2026 08:00:00 +0700</pubDate>
+<description>Comparing Starlink, VSAT, fiber, and cellular for branch offices, mine sites, and estates in Kalimantan: latency, stability, installation, and when to combine them.</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/infra.webp" medium="image"/>
+</item>
+<item>
+<title>Starlink for Mining: Choosing Kits, Installation, and Networks at Remote Sites</title>
+<link>https://www.sentratechnology.com/en/blog/starlink-untuk-tambang</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/en/blog/starlink-untuk-tambang</guid>
+<pubDate>Fri, 30 Oct 2026 08:00:00 +0700</pubDate>
+<description>A Starlink guide for mine sites: which kit fits, where to mount it, bringing WiFi to the mess and workshop, power, network security, and cost components.</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/infra.webp" medium="image"/>
+</item>
+<item>
+<title>Office CCTV Installation Cost: Cost Components and How to Calculate per Point</title>
+<link>https://www.sentratechnology.com/en/blog/biaya-pasang-cctv-kantor</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/en/blog/biaya-pasang-cctv-kantor</guid>
+<pubDate>Fri, 30 Oct 2026 08:00:00 +0700</pubDate>
+<description>What drives office CCTV installation cost: number of points, camera types, cabling, NVR, disk capacity, network, and maintenance. Including how to calculate storage.</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/cctv-gal-dashboard.webp" medium="image"/>
+</item>
+<item>
+<title>Fleet Management for Coal Mining: How GPS, Fuel Sensors, and Reports Work</title>
+<link>https://www.sentratechnology.com/en/blog/fleet-management-tambang</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/en/blog/fleet-management-tambang</guid>
+<pubDate>Fri, 30 Oct 2026 08:00:00 +0700</pubDate>
+<description>How fleet management works for coal mining and hauling: GPS and replay, fuel sensors, heavy equipment CAN-Bus data, geofences, operator behavior, service reminders, and daily reports.</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/products-fleet.webp" medium="image"/>
+</item>
+<item>
+<title>Company Laptop Procurement: Buy, Rent, or Lease?</title>
+<link>https://www.sentratechnology.com/en/blog/pengadaan-laptop-perusahaan</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/en/blog/pengadaan-laptop-perusahaan</guid>
+<pubDate>Fri, 30 Oct 2026 08:00:00 +0700</pubDate>
+<description>Comparing buying, renting, and leasing laptops for companies and agencies, choosing specifications by role, total cost components, and a procurement checklist.</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/it-procurement.webp" medium="image"/>
+</item>
+<item>
+<title>Android App Development Cost: What Drives It from First Version to Enterprise Scale</title>
+<link>https://www.sentratechnology.com/en/blog/biaya-membuat-aplikasi-android</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/en/blog/biaya-membuat-aplikasi-android</guid>
+<pubDate>Fri, 30 Oct 2026 08:00:00 +0700</pubDate>
+<description>What determines the cost of building an Android app for companies and agencies: user roles, features, integrations, offline mode, dashboards, security, and post-launch costs.</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/products-integrasi.webp" medium="image"/>
+</item>
+<item>
+<title>POMPy BATARA Helps North Barito Win the Digital Innovation Award 2026</title>
+<link>https://www.sentratechnology.com/en/blog/pompy-batara-digital-innovation-award-2026</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/en/blog/pompy-batara-digital-innovation-award-2026</guid>
+<pubDate>Tue, 20 Oct 2026 08:00:00 +0700</pubDate>
+<description>The POMPy BATARA thematic map portal helped North Barito Regency win the Digital Innovation Award 2026. What POMPy BATARA is and Sentra&#x27;s role.</description>
+<media:content url="https://www.sentratechnology.com/assets/img/projects/barito-dash.webp" medium="image"/>
+</item>
+<item>
+<title>When Does an Organization Need an On-Premise Private LLM?</title>
+<link>https://www.sentratechnology.com/en/blog/private-llm-on-premise</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/en/blog/private-llm-on-premise</guid>
+<pubDate>Sun, 18 Oct 2026 08:00:00 +0700</pubDate>
+<description>An AI assistant that answers from internal documents without sending data outside. When you need it, what to prepare, and how to get started.</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/products-sentrai.webp" medium="image"/>
+</item>
+<item>
+<title>Turning Your Existing CCTV into a System That Understands Context</title>
+<link>https://www.sentratechnology.com/en/blog/cctv-analytics-kamera-existing</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/en/blog/cctv-analytics-kamera-existing</guid>
+<pubDate>Thu, 15 Oct 2026 08:00:00 +0700</pubDate>
+<description>What CCTV analytics is, how it differs from ordinary motion sensors, and how to add an AI layer on top of cameras you already have.</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/cctv-hero-v2.webp" medium="image"/>
+</item>
+<item>
+<title>Face Recognition Attendance from CCTV: How It Works, Camera Requirements, and Limitations</title>
+<link>https://www.sentratechnology.com/en/blog/absensi-face-recognition-cctv</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/en/blog/absensi-face-recognition-cctv</guid>
+<pubDate>Sun, 11 Oct 2026 08:00:00 +0700</pubDate>
+<description>Can existing CCTV be used for face-based attendance? How it works, camera requirements, limitations, and what matters for personal data.</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/products-attendance-v2.webp" medium="image"/>
+</item>
+<item>
+<title>Face Attendance vs Fingerprint: Which Suits Offices and Factories?</title>
+<link>https://www.sentratechnology.com/en/blog/absensi-wajah-vs-fingerprint</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/en/blog/absensi-wajah-vs-fingerprint</guid>
+<pubDate>Sat, 10 Oct 2026 08:00:00 +0700</pubDate>
+<description>Comparing face recognition and fingerprint attendance on speed, hygiene, buddy punching, devices, and HRIS integration.</description>
+<media:content url="https://www.sentratechnology.com/assets/img/projects/attendance.webp" medium="image"/>
+</item>
+<item>
+<title>Automatic PPE Detection from CCTV: How It Works and How to Prepare</title>
+<link>https://www.sentratechnology.com/en/blog/deteksi-apd-otomatis-dari-cctv</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/en/blog/deteksi-apd-otomatis-dari-cctv</guid>
+<pubDate>Fri, 02 Oct 2026 08:00:00 +0700</pubDate>
+<description>How AI detects helmets, vests, and safety gear from CCTV, what needs to be prepared, and how HSE teams use the alerts.</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/products-safety.webp" medium="image"/>
+</item>
+</channel>
+</rss>

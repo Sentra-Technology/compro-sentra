@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
+<channel>
+<title>Artikel Sentra Technology</title>
+<link>https://www.sentratechnology.com/blog</link>
+<description>Panduan dari tim Sentra tentang CCTV analytics, absensi wajah, deteksi APD, private LLM, dan digitalisasi operasional organisasi.</description>
+<language>id</language>
+<lastBuildDate>Mon, 02 Nov 2026 08:00:00 +0700</lastBuildDate>
+<atom:link href="https://www.sentratechnology.com/blog/feed.xml" rel="self" type="application/rss+xml"/>
+<item>
+<title>Video Conference On-Premise: Alternatif Zoom untuk Rapat Rahasia</title>
+<link>https://www.sentratechnology.com/blog/video-conference-on-premise</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/blog/video-conference-on-premise</guid>
+<pubDate>Mon, 02 Nov 2026 08:00:00 +0700</pubDate>
+<description>Kapan perusahaan atau instansi perlu menjalankan video conference di server sendiri, apa kebutuhan jaringan dan perangkat, dan apa yang harus diterima dibanding layanan publik.</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/blog-meeting-onprem.webp" medium="image"/>
+</item>
+<item>
+<title>Spesifikasi Laptop Kantor 2026 untuk Admin, Desain, dan Lapangan</title>
+<link>https://www.sentratechnology.com/blog/spesifikasi-laptop-kantor-2026</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/blog/spesifikasi-laptop-kantor-2026</guid>
+<pubDate>Mon, 02 Nov 2026 08:00:00 +0700</pubDate>
+<description>Panduan memilih spesifikasi laptop kantor berdasarkan peran: prosesor, RAM, penyimpanan, layar, baterai, ketahanan, dan garansi, tanpa terjebak angka yang tidak perlu.</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/blog-laptop-kantor.webp" medium="image"/>
+</item>
+<item>
+<title>Smartlock Kantor: Akses Pintu dengan Kartu, PIN, Wajah, dan HP</title>
+<link>https://www.sentratechnology.com/blog/smartlock-kantor</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/blog/smartlock-kantor</guid>
+<pubDate>Mon, 02 Nov 2026 08:00:00 +0700</pubDate>
+<description>Cara memilih smartlock dan kontrol akses pintu untuk kantor: metode akses, catatan log, daya cadangan, keselamatan evakuasi kebakaran, dan integrasi dengan absensi.</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/blog-smartlock-kantor.webp" medium="image"/>
+</item>
+<item>
+<title>Sistem Antrian Rumah Sakit dan Klinik: Kiosk, Layar, dan Integrasi SIMRS</title>
+<link>https://www.sentratechnology.com/blog/sistem-antrian-rumah-sakit</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/blog/sistem-antrian-rumah-sakit</guid>
+<pubDate>Mon, 02 Nov 2026 08:00:00 +0700</pubDate>
+<description>Apa yang perlu disiapkan untuk sistem antrian rumah sakit, klinik, atau poliklinik: alur pasien, kiosk, layar panggilan, integrasi SIMRS, dan data waktu tunggu.</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/blog-antrian-rs.webp" medium="image"/>
+</item>
+<item>
+<title>Server AI On-Premise: GPU, RAM, dan Penyimpanan yang Dibutuhkan</title>
+<link>https://www.sentratechnology.com/blog/server-ai-on-premise</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/blog/server-ai-on-premise</guid>
+<pubDate>Mon, 02 Nov 2026 08:00:00 +0700</pubDate>
+<description>Cara memperkirakan kebutuhan GPU, VRAM, RAM, dan penyimpanan untuk menjalankan model bahasa di server sendiri, dengan rumus sederhana dan contoh ukuran model.</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/blog-server-ai.webp" medium="image"/>
+</item>
+<item>
+<title>Paket CCTV untuk Toko dan UMKM: Berapa Kamera yang Cukup</title>
+<link>https://www.sentratechnology.com/blog/paket-cctv-toko-umkm</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/blog/paket-cctv-toko-umkm</guid>
+<pubDate>Mon, 02 Nov 2026 08:00:00 +0700</pubDate>
+<description>Cara menentukan jumlah dan posisi kamera CCTV untuk toko, warung, atau gudang kecil, apa saja yang masuk paket, dan hal yang sering terlewat.</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/blog-cctv-toko.webp" medium="image"/>
+</item>
+<item>
+<title>Light Tower Surya vs Diesel untuk Tambang dan Proyek: Mana yang Cocok</title>
+<link>https://www.sentratechnology.com/blog/light-tower-surya-vs-diesel</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/blog/light-tower-surya-vs-diesel</guid>
+<pubDate>Mon, 02 Nov 2026 08:00:00 +0700</pubDate>
+<description>Perbandingan menara lampu surya, hybrid, dan diesel untuk tambang dan proyek: biaya operasional, perawatan, kebisingan, cuaca, daya tahan, keselamatan, dan cara memilih.</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/blog-light-tower.webp" medium="image"/>
+</item>
+<item>
+<title>Kiosk Pelayanan Publik untuk Mal Pelayanan Publik (MPP)</title>
+<link>https://www.sentratechnology.com/blog/kiosk-pelayanan-publik-mpp</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/blog/kiosk-pelayanan-publik-mpp</guid>
+<pubDate>Mon, 02 Nov 2026 08:00:00 +0700</pubDate>
+<description>Apa yang perlu disiapkan untuk kiosk antrean dan informasi di Mal Pelayanan Publik atau kantor layanan: fungsi, perangkat, alur antrean, aksesibilitas, dan perawatan.</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/blog-kiosk-mpp.webp" medium="image"/>
+</item>
+<item>
+<title>Instalasi Fiber Optik Gedung: Tahapan, Alat, dan Komponen Biaya</title>
+<link>https://www.sentratechnology.com/blog/instalasi-fiber-optik-gedung</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/blog/instalasi-fiber-optik-gedung</guid>
+<pubDate>Mon, 02 Nov 2026 08:00:00 +0700</pubDate>
+<description>Tahapan memasang fiber optik di gedung atau kampus: survei jalur, jenis kabel single-mode dan multimode, splicing, terminasi, pengukuran OTDR, dan komponen biaya.</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/blog-fiber-gedung.webp" medium="image"/>
+</item>
+<item>
+<title>GPS Tracker Kendaraan Kantor: Fitur, Komponen Biaya, dan Privasi Sopir</title>
+<link>https://www.sentratechnology.com/blog/gps-tracker-kendaraan-kantor</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/blog/gps-tracker-kendaraan-kantor</guid>
+<pubDate>Mon, 02 Nov 2026 08:00:00 +0700</pubDate>
+<description>Apa yang perlu dipertimbangkan sebelum memasang GPS tracker di kendaraan operasional: fitur, pemasangan, kartu SIM, platform, komponen biaya, dan aturan privasi sopir.</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/blog-gps-kendaraan.webp" medium="image"/>
+</item>
+<item>
+<title>Checklist Keamanan Website: 12 Hal yang Dicek Sebelum Diretas</title>
+<link>https://www.sentratechnology.com/blog/keamanan-website-checklist</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/blog/keamanan-website-checklist</guid>
+<pubDate>Mon, 02 Nov 2026 08:00:00 +0700</pubDate>
+<description>Daftar 12 pemeriksaan keamanan website untuk kantor, sekolah, dan instansi: pembaruan, kata sandi, cadangan, akun, tanda peretasan judi online, dan langkah saat sudah terkena.</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/blog-keamanan-website.webp" medium="image"/>
+</item>
+<item>
+<title>ChatGPT untuk Perusahaan: Risiko Data dan Alternatif On-Premise</title>
+<link>https://www.sentratechnology.com/blog/chatgpt-untuk-perusahaan</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/blog/chatgpt-untuk-perusahaan</guid>
+<pubDate>Mon, 02 Nov 2026 08:00:00 +0700</pubDate>
+<description>Apa yang perlu dicek sebelum karyawan memakai ChatGPT atau AI publik lain untuk dokumen kantor, dan kapan model on-premise atau private LLM lebih masuk akal.</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/blog-chatgpt-perusahaan.webp" medium="image"/>
+</item>
+<item>
+<title>CCTV IP vs Analog: Mana yang Cocok untuk Gedung Anda</title>
+<link>https://www.sentratechnology.com/blog/cctv-ip-vs-analog</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/blog/cctv-ip-vs-analog</guid>
+<pubDate>Mon, 02 Nov 2026 08:00:00 +0700</pubDate>
+<description>Perbedaan CCTV IP dan analog (AHD/TVI/CVI) dari sisi gambar, kabel, PoE, penyimpanan, analitik AI, dan biaya, plus kapan masing-masing masuk akal.</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/blog-ip-vs-analog.webp" medium="image"/>
+</item>
+<item>
+<title>Backup Data Kantor: Aturan 3-2-1 dalam Praktik</title>
+<link>https://www.sentratechnology.com/blog/backup-data-kantor-321</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/blog/backup-data-kantor-321</guid>
+<pubDate>Mon, 02 Nov 2026 08:00:00 +0700</pubDate>
+<description>Cara menerapkan aturan backup 3-2-1 di kantor kecil sampai menengah: apa yang dicadangkan, di mana disimpan, seberapa sering, dan cara menguji pemulihan.</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/blog-backup-321.webp" medium="image"/>
+</item>
+<item>
+<title>Aplikasi Android vs Web App untuk Tim Lapangan</title>
+<link>https://www.sentratechnology.com/blog/aplikasi-android-vs-web</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/blog/aplikasi-android-vs-web</guid>
+<pubDate>Mon, 02 Nov 2026 08:00:00 +0700</pubDate>
+<description>Kapan tim lapangan sebaiknya memakai aplikasi Android native dan kapan web app sudah cukup: sinyal, GPS, kamera, offline, perangkat keras, pembaruan, dan biaya perawatan.</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/blog-android-vs-web.webp" medium="image"/>
+</item>
+<item>
+<title>AI untuk Pemerintah Daerah: Asisten Dokumen yang Datanya Tidak Keluar</title>
+<link>https://www.sentratechnology.com/blog/ai-untuk-pemerintah-daerah</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/blog/ai-untuk-pemerintah-daerah</guid>
+<pubDate>Mon, 02 Nov 2026 08:00:00 +0700</pubDate>
+<description>Contoh pemakaian AI untuk pemda yang realistis: tanya jawab peraturan, ringkasan rapat, dan pencarian arsip, dengan syarat kontrol data, rujukan sumber, dan peninjauan manusia.</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/blog-ai-pemda.webp" medium="image"/>
+</item>
+<item>
+<title>WebGIS dan Peta Tematik untuk Pemda: Belajar dari POMPy BATARA Barito Utara</title>
+<link>https://www.sentratechnology.com/blog/webgis-peta-tematik-pemda</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/blog/webgis-peta-tematik-pemda</guid>
+<pubDate>Sat, 31 Oct 2026 08:00:00 +0700</pubDate>
+<description>Cara pemda membangun WebGIS dan peta tematik: lapisan data yang umum, langkah membangun, kesalahan yang sering terjadi, dengan contoh POMPy BATARA di Kabupaten Barito Utara.</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/blog-webgis.webp" medium="image"/>
+</item>
+<item>
+<title>Satu Data Daerah: Langkah Membangun Dashboard untuk Pimpinan</title>
+<link>https://www.sentratechnology.com/blog/satu-data-daerah-dashboard</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/blog/satu-data-daerah-dashboard</guid>
+<pubDate>Sat, 31 Oct 2026 08:00:00 +0700</pubDate>
+<description>Langkah pemda membangun Satu Data Daerah dan dashboard pimpinan: inventaris data, pemilik data, metadata, portal, pembaruan, dan perlindungan data pribadi.</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/blog-satu-data.webp" medium="image"/>
+</item>
+<item>
+<title>CCTV untuk Area Tambang: Kamera, Jaringan, Listrik, dan Pemantauan Jarak Jauh</title>
+<link>https://www.sentratechnology.com/blog/cctv-area-tambang</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/blog/cctv-area-tambang</guid>
+<pubDate>Sat, 31 Oct 2026 08:00:00 +0700</pubDate>
+<description>Panduan CCTV untuk site tambang: memilih kamera tahan debu dan hujan, jaringan kabel atau radio, sumber listrik, penyimpanan rekaman, dan pemantauan jarak jauh lewat satelit.</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/blog-cctv-tambang.webp" medium="image"/>
+</item>
+<item>
+<title>Apa Itu SPBE dan Apa yang Perlu Disiapkan Pemerintah Daerah</title>
+<link>https://www.sentratechnology.com/blog/spbe-pemda-persiapan</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/blog/spbe-pemda-persiapan</guid>
+<pubDate>Sat, 31 Oct 2026 08:00:00 +0700</pubDate>
+<description>Penjelasan SPBE (Sistem Pemerintahan Berbasis Elektronik) untuk pemda: dasar aturan, apa yang dinilai, checklist persiapan, dan kesalahan umum saat membangun aplikasi daerah.</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/blog-spbe.webp" medium="image"/>
+</item>
+<item>
+<title>Starlink vs VSAT vs Fiber untuk Kantor Cabang dan Site di Kalimantan</title>
+<link>https://www.sentratechnology.com/blog/starlink-vs-vsat-vs-fiber</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/blog/starlink-vs-vsat-vs-fiber</guid>
+<pubDate>Fri, 30 Oct 2026 08:00:00 +0700</pubDate>
+<description>Perbandingan Starlink, VSAT, fiber optik, dan seluler untuk kantor cabang, site tambang, dan kebun di Kalimantan: latensi, stabilitas, instalasi, dan kapan memakai kombinasi.</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/infra.webp" medium="image"/>
+</item>
+<item>
+<title>Starlink untuk Tambang: Memilih Kit, Instalasi, dan Jaringan di Site Remote</title>
+<link>https://www.sentratechnology.com/blog/starlink-untuk-tambang</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/blog/starlink-untuk-tambang</guid>
+<pubDate>Fri, 30 Oct 2026 08:00:00 +0700</pubDate>
+<description>Panduan Starlink untuk site tambang: kit yang cocok, titik pasang, membawa WiFi ke mess dan workshop, sumber listrik, keamanan jaringan, dan komponen biaya.</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/infra.webp" medium="image"/>
+</item>
+<item>
+<title>Pengadaan Laptop Perusahaan: Beli, Sewa, atau Leasing?</title>
+<link>https://www.sentratechnology.com/blog/pengadaan-laptop-perusahaan</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/blog/pengadaan-laptop-perusahaan</guid>
+<pubDate>Fri, 30 Oct 2026 08:00:00 +0700</pubDate>
+<description>Perbandingan beli, sewa, dan leasing laptop untuk perusahaan dan instansi, cara memilih spesifikasi per peran, komponen biaya total, dan checklist pengadaan.</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/it-procurement.webp" medium="image"/>
+</item>
+<item>
+<title>Fleet Management Tambang Batubara: Cara Kerja GPS, Sensor BBM, dan Laporan</title>
+<link>https://www.sentratechnology.com/blog/fleet-management-tambang</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/blog/fleet-management-tambang</guid>
+<pubDate>Fri, 30 Oct 2026 08:00:00 +0700</pubDate>
+<description>Cara kerja fleet management untuk tambang dan hauling batubara: GPS dan replay, sensor BBM, data CAN-Bus alat berat, geofence, perilaku operator, pengingat servis, dan laporan harian.</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/products-fleet.webp" medium="image"/>
+</item>
+<item>
+<title>Biaya Pasang CCTV Kantor: Komponen Biaya dan Cara Menghitung per Titik</title>
+<link>https://www.sentratechnology.com/blog/biaya-pasang-cctv-kantor</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/blog/biaya-pasang-cctv-kantor</guid>
+<pubDate>Fri, 30 Oct 2026 08:00:00 +0700</pubDate>
+<description>Apa saja yang menentukan biaya pasang CCTV kantor: jumlah titik, jenis kamera, kabel, NVR, kapasitas hardisk, jaringan, dan perawatan. Lengkap dengan cara menghitung penyimpanan.</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/cctv-gal-dashboard.webp" medium="image"/>
+</item>
+<item>
+<title>Biaya Membuat Aplikasi Android: Faktor Penentu dari Versi Awal sampai Skala Perusahaan</title>
+<link>https://www.sentratechnology.com/blog/biaya-membuat-aplikasi-android</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/blog/biaya-membuat-aplikasi-android</guid>
+<pubDate>Fri, 30 Oct 2026 08:00:00 +0700</pubDate>
+<description>Apa saja yang menentukan biaya pembuatan aplikasi Android untuk perusahaan dan instansi: peran pengguna, fitur, integrasi, mode offline, dashboard, keamanan, dan biaya setelah rilis.</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/products-integrasi.webp" medium="image"/>
+</item>
+<item>
+<title>POMPy BATARA Mengantar Barito Utara Meraih Digital Innovation Award 2026</title>
+<link>https://www.sentratechnology.com/blog/pompy-batara-digital-innovation-award-2026</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/blog/pompy-batara-digital-innovation-award-2026</guid>
+<pubDate>Tue, 20 Oct 2026 08:00:00 +0700</pubDate>
+<description>Portal peta tematik POMPy BATARA membantu Kabupaten Barito Utara meraih Digital Innovation Award 2026. Apa itu POMPy BATARA dan peran Sentra.</description>
+<media:content url="https://www.sentratechnology.com/assets/img/projects/barito-dash.webp" medium="image"/>
+</item>
+<item>
+<title>Kapan Organisasi Membutuhkan Private LLM On-Premise?</title>
+<link>https://www.sentratechnology.com/blog/private-llm-on-premise</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/blog/private-llm-on-premise</guid>
+<pubDate>Sun, 18 Oct 2026 08:00:00 +0700</pubDate>
+<description>Asisten AI yang menjawab dari dokumen internal tanpa mengirim data keluar. Kapan perlu, apa yang disiapkan, dan bagaimana memulainya.</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/products-sentrai.webp" medium="image"/>
+</item>
+<item>
+<title>Mengubah CCTV yang Sudah Ada Menjadi Sistem yang Memahami Konteks</title>
+<link>https://www.sentratechnology.com/blog/cctv-analytics-kamera-existing</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/blog/cctv-analytics-kamera-existing</guid>
+<pubDate>Thu, 15 Oct 2026 08:00:00 +0700</pubDate>
+<description>Apa itu CCTV analytics, apa bedanya dengan sensor gerak biasa, dan bagaimana menambahkan lapisan AI di atas kamera yang sudah terpasang.</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/cctv-hero-v2.webp" medium="image"/>
+</item>
+<item>
+<title>Absensi Face Recognition dari CCTV: Cara Kerja, Syarat Kamera, dan Batasannya</title>
+<link>https://www.sentratechnology.com/blog/absensi-face-recognition-cctv</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/blog/absensi-face-recognition-cctv</guid>
+<pubDate>Sun, 11 Oct 2026 08:00:00 +0700</pubDate>
+<description>Bisakah CCTV yang sudah terpasang dipakai untuk absensi wajah? Cara kerja, syarat kamera, batasan, dan hal penting soal data pribadi.</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/products-attendance-v2.webp" medium="image"/>
+</item>
+<item>
+<title>Absensi Wajah vs Fingerprint: Mana yang Cocok untuk Kantor dan Pabrik?</title>
+<link>https://www.sentratechnology.com/blog/absensi-wajah-vs-fingerprint</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/blog/absensi-wajah-vs-fingerprint</guid>
+<pubDate>Sat, 10 Oct 2026 08:00:00 +0700</pubDate>
+<description>Perbandingan absensi face recognition dan fingerprint dari sisi kecepatan, kebersihan, titip absen, perangkat, dan integrasi HRIS.</description>
+<media:content url="https://www.sentratechnology.com/assets/img/projects/attendance.webp" medium="image"/>
+</item>
+<item>
+<title>Deteksi APD Otomatis dari CCTV: Cara Kerja dan Persiapannya</title>
+<link>https://www.sentratechnology.com/blog/deteksi-apd-otomatis-dari-cctv</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/blog/deteksi-apd-otomatis-dari-cctv</guid>
+<pubDate>Fri, 02 Oct 2026 08:00:00 +0700</pubDate>
+<description>Bagaimana AI mendeteksi helm, rompi, dan atribut keselamatan dari CCTV, apa yang perlu disiapkan, dan bagaimana alert dipakai tim HSE.</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/products-safety.webp" medium="image"/>
+</item>
+</channel>
+</rss>

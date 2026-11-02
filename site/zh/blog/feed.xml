@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
+<channel>
+<title>Sentra Technology 文章</title>
+<link>https://www.sentratechnology.com/zh/blog</link>
+<description>Sentra 团队关于 CCTV 分析、人脸考勤、PPE 检测、私有化 LLM 及组织数字化转型的指南。</description>
+<language>zh-CN</language>
+<lastBuildDate>Mon, 02 Nov 2026 08:00:00 +0700</lastBuildDate>
+<atom:link href="https://www.sentratechnology.com/zh/blog/feed.xml" rel="self" type="application/rss+xml"/>
+<item>
+<title>网站安全检查清单：被黑前要检查的 12 件事</title>
+<link>https://www.sentratechnology.com/zh/blog/keamanan-website-checklist</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/zh/blog/keamanan-website-checklist</guid>
+<pubDate>Mon, 02 Nov 2026 08:00:00 +0700</pubDate>
+<description>适用于机构、学校和政府部门的 12 项网站安全检查：更新、密码、备份、账号、网络赌博注入迹象以及被入侵后的处理。</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/blog-keamanan-website.webp" medium="image"/>
+</item>
+<item>
+<title>现场团队用安卓应用还是网页应用</title>
+<link>https://www.sentratechnology.com/zh/blog/aplikasi-android-vs-web</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/zh/blog/aplikasi-android-vs-web</guid>
+<pubDate>Mon, 02 Nov 2026 08:00:00 +0700</pubDate>
+<description>现场团队何时应使用原生安卓应用，何时网页应用就够用：信号、GPS、摄像头、离线、硬件、更新和维护成本。</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/blog-android-vs-web.webp" medium="image"/>
+</item>
+<item>
+<title>楼宇光纤安装：阶段、工具与成本构成</title>
+<link>https://www.sentratechnology.com/zh/blog/instalasi-fiber-optik-gedung</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/zh/blog/instalasi-fiber-optik-gedung</guid>
+<pubDate>Mon, 02 Nov 2026 08:00:00 +0700</pubDate>
+<description>在楼宇或园区安装光纤的阶段：路由勘察、单模与多模、熔接、端接、OTDR 测试和成本构成。</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/blog-fiber-gedung.webp" medium="image"/>
+</item>
+<item>
+<title>本地部署视频会议：Zoom 的保密会议替代方案</title>
+<link>https://www.sentratechnology.com/zh/blog/video-conference-on-premise</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/zh/blog/video-conference-on-premise</guid>
+<pubDate>Mon, 02 Nov 2026 08:00:00 +0700</pubDate>
+<description>企业或机构何时应在自有服务器上运行视频会议，需要什么网络和设备，以及与公共服务相比要接受什么。</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/blog-meeting-onprem.webp" medium="image"/>
+</item>
+<item>
+<title>本地 AI 服务器：所需 GPU、内存与存储</title>
+<link>https://www.sentratechnology.com/zh/blog/server-ai-on-premise</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/zh/blog/server-ai-on-premise</guid>
+<pubDate>Mon, 02 Nov 2026 08:00:00 +0700</pubDate>
+<description>如何估算在自有服务器上运行语言模型所需的 GPU、显存、内存和存储。</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/blog-server-ai.webp" medium="image"/>
+</item>
+<item>
+<title>店铺与小微企业 CCTV 套餐：多少台摄像头够用</title>
+<link>https://www.sentratechnology.com/zh/blog/paket-cctv-toko-umkm</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/zh/blog/paket-cctv-toko-umkm</guid>
+<pubDate>Mon, 02 Nov 2026 08:00:00 +0700</pubDate>
+<description>如何确定店铺、摊位或小仓库所需摄像头数量和位置，套餐应包含什么。</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/blog-cctv-toko.webp" medium="image"/>
+</item>
+<item>
+<title>太阳能与柴油移动灯塔：矿区和工地如何选择</title>
+<link>https://www.sentratechnology.com/zh/blog/light-tower-surya-vs-diesel</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/zh/blog/light-tower-surya-vs-diesel</guid>
+<pubDate>Mon, 02 Nov 2026 08:00:00 +0700</pubDate>
+<description>比较矿区和工地的太阳能、混合动力与柴油灯塔：运行成本、维护、噪音、天气、安全与选择方法。</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/blog-light-tower.webp" medium="image"/>
+</item>
+<item>
+<title>地方政府的 AI：数据不出门的文档助手</title>
+<link>https://www.sentratechnology.com/zh/blog/ai-untuk-pemerintah-daerah</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/zh/blog/ai-untuk-pemerintah-daerah</guid>
+<pubDate>Mon, 02 Nov 2026 08:00:00 +0700</pubDate>
+<description>地方政府切合实际的 AI 用法：法规问答、会议纪要摘要和档案检索，前提是数据可控、有来源引用并经人工审核。</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/blog-ai-pemda.webp" medium="image"/>
+</item>
+<item>
+<title>医院与诊所排队系统：自助终端、显示屏与 HIS 集成</title>
+<link>https://www.sentratechnology.com/zh/blog/sistem-antrian-rumah-sakit</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/zh/blog/sistem-antrian-rumah-sakit</guid>
+<pubDate>Mon, 02 Nov 2026 08:00:00 +0700</pubDate>
+<description>医院、诊所或门诊部排队系统需要准备什么：患者流程、自助终端、叫号屏、医院信息系统集成和等待时间数据。</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/blog-antrian-rs.webp" medium="image"/>
+</item>
+<item>
+<title>办公室智能门锁：刷卡、密码、人脸与手机开门</title>
+<link>https://www.sentratechnology.com/zh/blog/smartlock-kantor</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/zh/blog/smartlock-kantor</guid>
+<pubDate>Mon, 02 Nov 2026 08:00:00 +0700</pubDate>
+<description>如何为办公室选择智能门锁和门禁：开门方式、日志、备用电源、消防疏散安全以及与考勤的集成。</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/blog-smartlock-kantor.webp" medium="image"/>
+</item>
+<item>
+<title>办公室数据备份：3-2-1 规则的实践</title>
+<link>https://www.sentratechnology.com/zh/blog/backup-data-kantor-321</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/zh/blog/backup-data-kantor-321</guid>
+<pubDate>Mon, 02 Nov 2026 08:00:00 +0700</pubDate>
+<description>如何在中小型办公室应用 3-2-1 备份规则：备份什么、存在哪、多久一次、如何测试恢复。</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/blog-backup-321.webp" medium="image"/>
+</item>
+<item>
+<title>公司车辆 GPS 追踪器：功能、成本构成与司机隐私</title>
+<link>https://www.sentratechnology.com/zh/blog/gps-tracker-kendaraan-kantor</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/zh/blog/gps-tracker-kendaraan-kantor</guid>
+<pubDate>Mon, 02 Nov 2026 08:00:00 +0700</pubDate>
+<description>在运营车辆上安装 GPS 追踪器前需考虑什么：功能、安装、SIM 卡、平台、成本构成和司机隐私规则。</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/blog-gps-kendaraan.webp" medium="image"/>
+</item>
+<item>
+<title>公共服务中心（MPP）的服务自助终端</title>
+<link>https://www.sentratechnology.com/zh/blog/kiosk-pelayanan-publik-mpp</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/zh/blog/kiosk-pelayanan-publik-mpp</guid>
+<pubDate>Mon, 02 Nov 2026 08:00:00 +0700</pubDate>
+<description>公共服务中心或服务办公室的排队与信息自助终端需要准备什么：功能、设备、排队流程、无障碍和维护。</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/blog-kiosk-mpp.webp" medium="image"/>
+</item>
+<item>
+<title>企业使用 ChatGPT：数据风险与本地部署替代方案</title>
+<link>https://www.sentratechnology.com/zh/blog/chatgpt-untuk-perusahaan</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/zh/blog/chatgpt-untuk-perusahaan</guid>
+<pubDate>Mon, 02 Nov 2026 08:00:00 +0700</pubDate>
+<description>员工用 ChatGPT 等公共 AI 处理办公文件前应检查什么，以及何时本地部署或私有 LLM 更合适。</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/blog-chatgpt-perusahaan.webp" medium="image"/>
+</item>
+<item>
+<title>IP 与模拟 CCTV：哪种适合您的大楼</title>
+<link>https://www.sentratechnology.com/zh/blog/cctv-ip-vs-analog</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/zh/blog/cctv-ip-vs-analog</guid>
+<pubDate>Mon, 02 Nov 2026 08:00:00 +0700</pubDate>
+<description>从画质、布线、PoE、存储、AI 分析和成本比较 IP 与模拟（AHD/TVI/CVI）监控，以及各自适用场景。</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/blog-ip-vs-analog.webp" medium="image"/>
+</item>
+<item>
+<title>2026 年办公笔记本配置：行政、设计与外勤</title>
+<link>https://www.sentratechnology.com/zh/blog/spesifikasi-laptop-kantor-2026</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/zh/blog/spesifikasi-laptop-kantor-2026</guid>
+<pubDate>Mon, 02 Nov 2026 08:00:00 +0700</pubDate>
+<description>按岗位选择办公笔记本配置的指南：处理器、内存、存储、屏幕、电池、耐用性和保修。</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/blog-laptop-kantor.webp" medium="image"/>
+</item>
+<item>
+<title>矿区 CCTV：摄像机、网络、供电与远程监控</title>
+<link>https://www.sentratechnology.com/zh/blog/cctv-area-tambang</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/zh/blog/cctv-area-tambang</guid>
+<pubDate>Sat, 31 Oct 2026 08:00:00 +0700</pubDate>
+<description>矿区 CCTV 指南：防尘防雨摄像机、有线或无线网络、供电、录像存储，以及通过卫星的远程监控。</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/blog-cctv-tambang.webp" medium="image"/>
+</item>
+<item>
+<title>地方统一数据：为领导搭建仪表板的步骤</title>
+<link>https://www.sentratechnology.com/zh/blog/satu-data-daerah-dashboard</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/zh/blog/satu-data-daerah-dashboard</guid>
+<pubDate>Sat, 31 Oct 2026 08:00:00 +0700</pubDate>
+<description>地方政府搭建地方统一数据和领导仪表板的步骤：数据盘点、数据负责人、元数据、门户、更新和个人数据保护。</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/blog-satu-data.webp" medium="image"/>
+</item>
+<item>
+<title>地方政府的 WebGIS 与专题地图：北巴里托县 POMPy BATARA 的启示</title>
+<link>https://www.sentratechnology.com/zh/blog/webgis-peta-tematik-pemda</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/zh/blog/webgis-peta-tematik-pemda</guid>
+<pubDate>Sat, 31 Oct 2026 08:00:00 +0700</pubDate>
+<description>地方政府如何建设 WebGIS 与专题地图：常见数据图层、建设步骤、常见错误，并以北巴里托县的 POMPy BATARA 为例。</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/blog-webgis.webp" medium="image"/>
+</item>
+<item>
+<title>什么是 SPBE？地方政府需要做哪些准备</title>
+<link>https://www.sentratechnology.com/zh/blog/spbe-pemda-persiapan</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/zh/blog/spbe-pemda-persiapan</guid>
+<pubDate>Sat, 31 Oct 2026 08:00:00 +0700</pubDate>
+<description>面向地方政府的 SPBE（印尼电子政务体系）说明：法律依据、评估内容、准备清单，以及建设地方应用时常见的错误。</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/blog-spbe.webp" medium="image"/>
+</item>
+<item>
+<title>矿区 Starlink：套件选择、安装与偏远站点网络</title>
+<link>https://www.sentratechnology.com/zh/blog/starlink-untuk-tambang</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/zh/blog/starlink-untuk-tambang</guid>
+<pubDate>Fri, 30 Oct 2026 08:00:00 +0700</pubDate>
+<description>矿区 Starlink 指南：适合的套件、安装位置、把 WiFi 延伸到宿舍和车间、供电、网络安全以及成本构成。</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/infra.webp" medium="image"/>
+</item>
+<item>
+<title>煤矿车队管理：GPS、油量传感器与报表如何运作</title>
+<link>https://www.sentratechnology.com/zh/blog/fleet-management-tambang</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/zh/blog/fleet-management-tambang</guid>
+<pubDate>Fri, 30 Oct 2026 08:00:00 +0700</pubDate>
+<description>煤矿与运输车队管理的工作原理：GPS 与轨迹回放、油量传感器、重型设备 CAN 总线数据、电子围栏、驾驶行为、保养提醒和每日报表。</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/products-fleet.webp" medium="image"/>
+</item>
+<item>
+<title>加里曼丹分支机构与站点：Starlink、VSAT 与光纤对比</title>
+<link>https://www.sentratechnology.com/zh/blog/starlink-vs-vsat-vs-fiber</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/zh/blog/starlink-vs-vsat-vs-fiber</guid>
+<pubDate>Fri, 30 Oct 2026 08:00:00 +0700</pubDate>
+<description>比较 Starlink、VSAT、光纤和蜂窝网络在加里曼丹分支机构、矿区和种植园的适用性：时延、稳定性、安装以及何时组合使用。</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/infra.webp" medium="image"/>
+</item>
+<item>
+<title>办公室 CCTV 安装费用：成本构成与按点位计算方法</title>
+<link>https://www.sentratechnology.com/zh/blog/biaya-pasang-cctv-kantor</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/zh/blog/biaya-pasang-cctv-kantor</guid>
+<pubDate>Fri, 30 Oct 2026 08:00:00 +0700</pubDate>
+<description>影响办公室 CCTV 安装费用的因素：点位数量、摄像机类型、布线、NVR、硬盘容量、网络和维护，并附存储容量计算方法。</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/cctv-gal-dashboard.webp" medium="image"/>
+</item>
+<item>
+<title>企业笔记本采购：购买、租赁还是融资租赁？</title>
+<link>https://www.sentratechnology.com/zh/blog/pengadaan-laptop-perusahaan</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/zh/blog/pengadaan-laptop-perusahaan</guid>
+<pubDate>Fri, 30 Oct 2026 08:00:00 +0700</pubDate>
+<description>比较企业和机构购买、租赁与融资租赁笔记本的方式，按岗位选择配置，总成本构成以及采购清单。</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/it-procurement.webp" medium="image"/>
+</item>
+<item>
+<title>Android 应用开发费用：从首个版本到企业规模的决定因素</title>
+<link>https://www.sentratechnology.com/zh/blog/biaya-membuat-aplikasi-android</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/zh/blog/biaya-membuat-aplikasi-android</guid>
+<pubDate>Fri, 30 Oct 2026 08:00:00 +0700</pubDate>
+<description>企业和机构开发 Android 应用的费用由什么决定：用户角色、功能、集成、离线模式、后台、安全以及上线后的费用。</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/products-integrasi.webp" medium="image"/>
+</item>
+<item>
+<title>POMPy BATARA 助力北巴里托县荣获 2026 年 Digital Innovation Award</title>
+<link>https://www.sentratechnology.com/zh/blog/pompy-batara-digital-innovation-award-2026</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/zh/blog/pompy-batara-digital-innovation-award-2026</guid>
+<pubDate>Tue, 20 Oct 2026 08:00:00 +0700</pubDate>
+<description>专题地图门户 POMPy BATARA 帮助北巴里托县（Kabupaten Barito Utara）荣获 2026 年 Digital Innovation Award。POMPy BATARA 是什么，Sentra 发挥了什么作用。</description>
+<media:content url="https://www.sentratechnology.com/assets/img/projects/barito-dash.webp" medium="image"/>
+</item>
+<item>
+<title>组织何时需要本地部署的私有化 LLM？</title>
+<link>https://www.sentratechnology.com/zh/blog/private-llm-on-premise</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/zh/blog/private-llm-on-premise</guid>
+<pubDate>Sun, 18 Oct 2026 08:00:00 +0700</pubDate>
+<description>依据内部文档作答、数据不外传的 AI 助手。何时需要、需要准备什么，以及如何起步。</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/products-sentrai.webp" medium="image"/>
+</item>
+<item>
+<title>让现有 CCTV 成为能理解场景的系统</title>
+<link>https://www.sentratechnology.com/zh/blog/cctv-analytics-kamera-existing</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/zh/blog/cctv-analytics-kamera-existing</guid>
+<pubDate>Thu, 15 Oct 2026 08:00:00 +0700</pubDate>
+<description>什么是 CCTV 分析，它与普通移动侦测有何不同，以及如何在已安装的摄像头上叠加 AI 层。</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/cctv-hero-v2.webp" medium="image"/>
+</item>
+<item>
+<title>基于 CCTV 的人脸识别考勤：工作原理、摄像头要求与局限</title>
+<link>https://www.sentratechnology.com/zh/blog/absensi-face-recognition-cctv</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/zh/blog/absensi-face-recognition-cctv</guid>
+<pubDate>Sun, 11 Oct 2026 08:00:00 +0700</pubDate>
+<description>已安装的 CCTV 能否用于人脸考勤？本文介绍工作原理、摄像头要求、局限，以及个人数据方面的要点。</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/products-attendance-v2.webp" medium="image"/>
+</item>
+<item>
+<title>人脸考勤与指纹考勤：哪种更适合办公室和工厂？</title>
+<link>https://www.sentratechnology.com/zh/blog/absensi-wajah-vs-fingerprint</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/zh/blog/absensi-wajah-vs-fingerprint</guid>
+<pubDate>Sat, 10 Oct 2026 08:00:00 +0700</pubDate>
+<description>从速度、卫生、代打卡、设备和 HRIS 集成等方面，对比人脸识别考勤与指纹考勤。</description>
+<media:content url="https://www.sentratechnology.com/assets/img/projects/attendance.webp" medium="image"/>
+</item>
+<item>
+<title>通过 CCTV 自动检测 PPE：工作原理与准备工作</title>
+<link>https://www.sentratechnology.com/zh/blog/deteksi-apd-otomatis-dari-cctv</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/zh/blog/deteksi-apd-otomatis-dari-cctv</guid>
+<pubDate>Fri, 02 Oct 2026 08:00:00 +0700</pubDate>
+<description>AI 如何从 CCTV 画面中检测安全帽、反光背心等安全装备，需要做哪些准备，以及 HSE 团队如何使用告警。</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/products-safety.webp" medium="image"/>
+</item>
+</channel>
+</rss>
